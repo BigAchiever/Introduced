@@ -1,0 +1,23 @@
+{
+  "name": "mcp-introduced",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "The only process in this project holding a token that can write.",
+  "scripts": {
+    "start": "node --experimental-strip-types src/index.ts",
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=22.6 <25"
+  }
+}
