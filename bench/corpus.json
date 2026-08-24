@@ -1,0 +1,495 @@
+[
+ {
+  "arm": "B",
+  "cites_commit": false,
+  "cves": [
+   "CVE-2026-54008"
+  ],
+  "fixed": [
+   "0.9.6"
+  ],
+  "ghsa": "GHSA-226f-f24g-524w",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 157,
+  "package": "open-webui",
+  "probe_eligible": false,
+  "pysec_id": "PYSEC-2026-2690",
+  "repo": "https://github.com/open-webui/open-webui",
+  "split": "dev"
+ },
+ {
+  "arm": "B",
+  "cites_commit": true,
+  "cves": [
+   "CVE-2024-11042"
+  ],
+  "fixed": [
+   "5.3.0rc1"
+  ],
+  "ghsa": "GHSA-227r-w5j2-6243",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 145,
+  "package": "invokeai",
+  "probe_eligible": false,
+  "pysec_id": "PYSEC-2026-358",
+  "repo": "https://github.com/invoke-ai/InvokeAI",
+  "split": "dev"
+ },
+ {
+  "arm": "B",
+  "cites_commit": true,
+  "cves": [
+   "CVE-2025-46725"
+  ],
+  "fixed": [
+   "0.53.15"
+  ],
+  "ghsa": "GHSA-22c2-9gwg-mj59",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 448,
+  "package": "langroid",
+  "probe_eligible": false,
+  "pysec_id": "PYSEC-2026-1531",
+  "repo": "https://github.com/langroid/langroid",
+  "split": "dev"
+ },
+ {
+  "arm": "C",
+  "cites_commit": false,
+  "cves": [
+   "CVE-2024-25170"
+  ],
+  "fixed": [
+   "6.0.0"
+  ],
+  "ghsa": "GHSA-22cc-w7xm-rfhx",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 138,
+  "package": "mezzanine",
+  "probe_eligible": false,
+  "pysec_id": "PYSEC-2026-1626",
+  "repo": "https://github.com/stephenmcd/mezzanine",
+  "split": "dev"
+ },
+ {
+  "arm": "B",
+  "cites_commit": false,
+  "cves": [
+   "CVE-2026-56833"
+  ],
+  "fixed": [
+   "4.6.59"
+  ],
+  "ghsa": "GHSA-22cj-m4wf-fv2c",
+  "introduced": [
+   "3.8.1"
+  ],
+  "n_versions": 300,
+  "package": "praisonai",
+  "probe_eligible": false,
+  "pysec_id": "PYSEC-2026-3499",
+  "repo": "https://github.com/MervinPraison/PraisonAI",
+  "split": "heldout"
+ },
+ {
+  "arm": "B",
+  "cites_commit": false,
+  "cves": [
+   "CVE-2021-39214"
+  ],
+  "fixed": [
+   "7.0.3"
+  ],
+  "ghsa": "GHSA-22gh-3r9q-xf38",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 48,
+  "package": "mitmproxy",
+  "probe_eligible": false,
+  "pysec_id": "PYSEC-2021-328",
+  "repo": "https://github.com/mitmproxy/mitmproxy",
+  "split": "heldout"
+ },
+ {
+  "arm": "B",
+  "cites_commit": false,
+  "cves": [
+   "CVE-2019-7617"
+  ],
+  "fixed": [
+   "5.1.0"
+  ],
+  "ghsa": "GHSA-22jh-6gx8-f944",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 26,
+  "package": "elastic-apm",
+  "probe_eligible": false,
+  "pysec_id": "PYSEC-2019-178",
+  "repo": "https://github.com/elastic/apm-agent-python",
+  "split": "dev"
+ },
+ {
+  "arm": "B",
+  "cites_commit": true,
+  "cves": [
+   "CVE-2020-10571"
+  ],
+  "fixed": [
+   "1.9.4"
+  ],
+  "ghsa": "GHSA-22jr-vc7j-g762",
+  "introduced": [
+   "1.8.37"
+  ],
+  "n_versions": 6,
+  "package": "psd-tools",
+  "probe_eligible": false,
+  "pysec_id": "PYSEC-2020-91",
+  "repo": "https://github.com/psd-tools/psd-tools",
+  "split": "dev"
+ },
+ {
+  "arm": "C",
+  "cites_commit": false,
+  "cves": [
+   "CVE-2019-12760"
+  ],
+  "fixed": [
+   "0.4.0"
+  ],
+  "ghsa": "GHSA-22mf-97vh-x8rw",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 14,
+  "package": "parso",
+  "probe_eligible": true,
+  "pysec_id": "PYSEC-2019-109",
+  "repo": "https://github.com/davidhalter/parso",
+  "split": "dev"
+ },
+ {
+  "arm": "B",
+  "cites_commit": true,
+  "cves": [
+   "CVE-2022-31052"
+  ],
+  "fixed": [
+   "1.61.1"
+  ],
+  "ghsa": "GHSA-22p3-qrh9-cx32",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 259,
+  "package": "matrix-synapse",
+  "probe_eligible": false,
+  "pysec_id": "PYSEC-2022-224",
+  "repo": "https://github.com/matrix-org/synapse",
+  "split": "dev"
+ },
+ {
+  "arm": "C",
+  "cites_commit": false,
+  "cves": [],
+  "fixed": [
+   "0.5.0b3.dev85"
+  ],
+  "ghsa": "GHSA-25pw-q952-x37g",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 91,
+  "package": "pyload-ng",
+  "probe_eligible": false,
+  "pysec_id": null,
+  "repo": "https://github.com/pyload/pyload",
+  "split": "dev"
+ },
+ {
+  "arm": "C",
+  "cites_commit": false,
+  "cves": [],
+  "fixed": [
+   "5.0.0"
+  ],
+  "ghsa": "GHSA-26jh-r8g2-6fpr",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 562,
+  "package": "gradio",
+  "probe_eligible": false,
+  "pysec_id": null,
+  "repo": "https://github.com/gradio-app/gradio",
+  "split": "heldout"
+ },
+ {
+  "arm": "C",
+  "cites_commit": false,
+  "cves": [
+   "CVE-2026-31225"
+  ],
+  "fixed": [
+   "0.10.0"
+  ],
+  "ghsa": "GHSA-2799-6g5r-mmc7",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 60,
+  "package": "superduper-framework",
+  "probe_eligible": false,
+  "pysec_id": "PYSEC-2026-3077",
+  "repo": "https://github.com/superduper-io/superduper",
+  "split": "heldout"
+ },
+ {
+  "arm": "C",
+  "cites_commit": false,
+  "cves": [
+   "CVE-2026-55235"
+  ],
+  "fixed": [
+   "0.10.0"
+  ],
+  "ghsa": "GHSA-2c9q-c2q9-qgqv",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 410,
+  "package": "langgraph-api",
+  "probe_eligible": false,
+  "pysec_id": null,
+  "repo": "https://github.com/langchain-ai/helm",
+  "split": "dev"
+ },
+ {
+  "arm": "C",
+  "cites_commit": false,
+  "cves": [
+   "CVE-2017-3590"
+  ],
+  "fixed": [
+   "2.1.5"
+  ],
+  "ghsa": "GHSA-2cf3-g243-hhfx",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 16,
+  "package": "mysql-connector-python",
+  "probe_eligible": false,
+  "pysec_id": "PYSEC-2026-682",
+  "repo": "https://github.com/mysql/mysql-connector-python",
+  "split": "dev"
+ },
+ {
+  "arm": "C",
+  "cites_commit": false,
+  "cves": [
+   "CVE-2026-8445"
+  ],
+  "fixed": [
+   "1.12.0"
+  ],
+  "ghsa": "GHSA-3rcm-vjrc-p45j",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 56,
+  "package": "justhtml",
+  "probe_eligible": true,
+  "pysec_id": null,
+  "repo": "https://github.com/EmilStenstrom/justhtml",
+  "split": "dev"
+ },
+ {
+  "arm": "A",
+  "cites_commit": false,
+  "cves": [
+   "CVE-2021-45230"
+  ],
+  "fixed": [
+   "2.2.0"
+  ],
+  "ghsa": "GHSA-4jh2-3c85-q67h",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 88,
+  "package": "apache-airflow",
+  "probe_eligible": false,
+  "pysec_id": "PYSEC-2022-11",
+  "repo": "https://github.com/pypa/advisory-database",
+  "split": "dev"
+ },
+ {
+  "arm": "A",
+  "cites_commit": true,
+  "cves": [
+   "CVE-2024-1968"
+  ],
+  "fixed": [
+   "2.11.2"
+  ],
+  "ghsa": "GHSA-4qqq-9vqf-3h3f",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 98,
+  "package": "scrapy",
+  "probe_eligible": false,
+  "pysec_id": "PYSEC-2024-258",
+  "repo": "https://github.com/scrapy/scrapy",
+  "split": "dev"
+ },
+ {
+  "arm": "C",
+  "cites_commit": false,
+  "cves": [],
+  "fixed": [
+   "0.0.31"
+  ],
+  "ghsa": "GHSA-4vr7-g93g-cf6m",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 30,
+  "package": "picklescan",
+  "probe_eligible": true,
+  "pysec_id": null,
+  "repo": "https://github.com/mmaitre314/picklescan",
+  "split": "heldout"
+ },
+ {
+  "arm": "C",
+  "cites_commit": false,
+  "cves": [
+   "CVE-2018-18548"
+  ],
+  "fixed": [
+   "1.2.23.13"
+  ],
+  "ghsa": "GHSA-5pcv-m8w2-62m9",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 143,
+  "package": "ajenti",
+  "probe_eligible": true,
+  "pysec_id": "PYSEC-2018-107",
+  "repo": "https://github.com/ajenti/ajenti",
+  "split": "heldout"
+ },
+ {
+  "arm": "C",
+  "cites_commit": false,
+  "cves": [],
+  "fixed": [
+   "0.3.2"
+  ],
+  "ghsa": "GHSA-879p-8gw4-mcpw",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 15,
+  "package": "fgr",
+  "probe_eligible": true,
+  "pysec_id": null,
+  "repo": "https://github.com/dan1hc/fgr",
+  "split": "dev"
+ },
+ {
+  "arm": "A",
+  "cites_commit": false,
+  "cves": [
+   "CVE-2026-1669"
+  ],
+  "fixed": [
+   "3.13.1"
+  ],
+  "ghsa": "GHSA-gfmx-qqqh-f38q",
+  "introduced": [
+   "3.0.0"
+  ],
+  "n_versions": 32,
+  "package": "keras",
+  "probe_eligible": false,
+  "pysec_id": "PYSEC-2026-2546",
+  "repo": "https://github.com/keras-team/keras",
+  "split": "dev"
+ },
+ {
+  "arm": "A",
+  "cites_commit": true,
+  "cves": [
+   "CVE-2023-22738"
+  ],
+  "fixed": [
+   "3.8.0"
+  ],
+  "ghsa": "GHSA-vvjv-97j8-94xh",
+  "introduced": [
+   "0"
+  ],
+  "n_versions": 150,
+  "package": "vantage6",
+  "probe_eligible": false,
+  "pysec_id": "PYSEC-2023-53",
+  "repo": "https://github.com/vantage6/vantage6",
+  "split": "heldout"
+ },
+ {
+  "arm": "A",
+  "cites_commit": true,
+  "cves": [
+   "CVE-2021-41146"
+  ],
+  "fixed": [
+   "2.4.0"
+  ],
+  "ghsa": "GHSA-vw27-fwjf-5qxm",
+  "introduced": [
+   "1.7.0"
+  ],
+  "n_versions": 27,
+  "package": "qutebrowser",
+  "probe_eligible": false,
+  "pysec_id": "PYSEC-2021-382",
+  "repo": "https://github.com/qutebrowser/qutebrowser",
+  "split": "heldout"
+ },
+ {
+  "arm": "A",
+  "cites_commit": false,
+  "cves": [
+   "CVE-2020-1736"
+  ],
+  "fixed": [
+   "2.10.0"
+  ],
+  "ghsa": "GHSA-x7jh-595q-wq82",
+  "hard_case": true,
+  "introduced": [
+   "2.7.0"
+  ],
+  "n_versions": 111,
+  "package": "ansible",
+  "probe_eligible": false,
+  "pysec_id": "PYSEC-2020-8",
+  "repo": "https://github.com/ansible/ansible",
+  "split": "dev"
+ }
+]
