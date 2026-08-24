@@ -1,0 +1,13 @@
+# Qodo Merge configuration.
+#
+# Every change to this repository lands through a pull request, and every pull
+# request is reviewed before it merges. Findings are addressed on the same
+# branch, in commits that appear in the PR — not in follow-up commits after it.
+#
+# handle_push_trigger keeps that record readable: without it the review runs
+# once, so the PR shows what was found and nothing about what was done with it.
+
+[github_app]
+pr_commands = ["/agentic_describe", "/agentic_review"]
+handle_push_trigger = true
+push_commands = ["/agentic_review"]

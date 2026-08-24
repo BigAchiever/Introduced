@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Local
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+
+# Working output. Nothing here is scored: the benchmark reads only the
+# committed evidence bundles under bench/.
+runs/
+scratch/
+
+# Pinned OSV snapshot: 32 MB, reproducible from PROVENANCE.json
+bench/.cache/
+node_modules/
