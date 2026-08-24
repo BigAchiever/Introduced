@@ -39,8 +39,14 @@ test(
   () => {},
 );
 
-test('an advisory id in either case names the same branch', () => {
+test('every casing of one advisory names the same branch', () => {
   // Two spellings of one advisory must not become two branches: the branch name is
   // what lets a repeated write find the first write's work.
-  assert.equal(branchNameFor('GHSA-X7JH-595Q-WQ82'), branchNameFor('GHSA-x7jh-595q-wq82'));
+  //
+  // The prefix is varied as well as the suffix. The first version of this test only
+  // varied the suffix, so it passed while `ghsa-...` was still being rejected.
+  const canonical = branchNameFor('GHSA-x7jh-595q-wq82');
+  for (const spelling of ['GHSA-X7JH-595Q-WQ82', 'ghsa-x7jh-595q-wq82', 'Ghsa-X7jh-595Q-wq82']) {
+    assert.equal(branchNameFor(spelling), canonical, spelling);
+  }
 });

@@ -45,7 +45,10 @@ export interface PullRequestRef {
  * A name derived from the advisory — rather than a timestamp or a random suffix —
  * is what lets the second call find the first call's work instead of duplicating it.
  */
-export const GHSA_ID = /^GHSA-[0-9a-zA-Z]{4}-[0-9a-zA-Z]{4}-[0-9a-zA-Z]{4}$/;
+// The `i` flag covers the prefix as well as the suffix. Spelling it with character
+// classes left `GHSA-` literal, so the comment below promised something the pattern
+// did not do and the test did not reach.
+export const GHSA_ID = /^GHSA-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}$/i;
 
 export function branchNameFor(advisoryId: string): string {
   // Case-insensitive, then normalised. GHSA ids are canonically lower-case, but an id
