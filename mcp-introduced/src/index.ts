@@ -2,7 +2,7 @@ import { createServer, type IncomingMessage, type ServerResponse } from 'node:ht
 import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
 import { buildServer } from './server.ts';
 import { WRITE_TOOL_NAMES } from './tools.ts';
-import { requireWriteToken } from './github.ts';
+import { redact, requireWriteToken } from './github.ts';
 
 const PORT = Number(process.env.PORT ?? 8931);
 
@@ -68,7 +68,10 @@ createServer((req, res) => {
   if (url.startsWith('/mcp')) {
     void handleMcp(req, res).catch((err: unknown) => {
       if (!res.headersSent) res.writeHead(500);
-      res.end(String(err instanceof Error ? err.message : err));
+      // Through redact(), always. github.ts states that a token is never interpolated
+      // into a log, an error, or a tool result; an error raised deep in a request path
+      // is exactly where one would otherwise arrive.
+      res.end(redact(String(err instanceof Error ? err.message : err)));
     });
     return;
   }

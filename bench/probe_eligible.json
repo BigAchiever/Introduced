@@ -2,7 +2,7 @@
  "acryl-datahub@0.8.45": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 32
+  "count": 30
  },
  "admesh@0.98.5": {
   "eligible": false,
@@ -69,12 +69,12 @@
  "ai-flow@0.3.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 74
+  "count": 66
  },
  "aider-chat@0.86.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 108
+  "count": 106
  },
  "aim@3.1.0": {
   "eligible": false,
@@ -144,82 +144,82 @@
  "aiohttp@3.10.11": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "aiohttp@3.12.14": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 7
  },
  "aiohttp@3.13.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 7
  },
  "aiohttp@3.13.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 7
  },
  "aiohttp@3.14.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 9
+  "count": 7
  },
  "aiohttp@3.14.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 9
+  "count": 7
  },
  "aiohttp@3.14.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 9
+  "count": 7
  },
  "aiohttp@3.14.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 9
+  "count": 7
  },
  "aiohttp@3.7.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "aiohttp@3.8.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 10
+  "count": 7
  },
  "aiohttp@3.8.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 10
+  "count": 7
  },
  "aiohttp@3.8.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 10
+  "count": 7
  },
  "aiohttp@3.8.6": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 10
+  "count": 7
  },
  "aiohttp@3.9.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 5
  },
  "aiohttp@3.9.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 5
  },
  "aiohttp@3.9.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 5
  },
  "aiomysql@0.3.0": {
   "eligible": false,
@@ -297,17 +297,17 @@
  "anki@24.06": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 6
  },
  "anki@24.6": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 6
  },
  "ansible-core@2.15.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 5
  },
  "ansible-runner@2.1.0": {
   "eligible": false,
@@ -408,17 +408,17 @@
  "aodh@6.0.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 31
+  "count": 30
  },
  "apache-airflow-core@3.2.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 66
+  "count": 60
  },
  "apache-airflow-core@3.2.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 67
+  "count": 61
  },
  "apache-airflow-providers-amazon@7.2.1": {
   "eligible": false,
@@ -428,12 +428,12 @@
  "apache-airflow-providers-amazon@9.22.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 15
  },
  "apache-airflow-providers-amazon@9.28.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 14
  },
  "apache-airflow-providers-apache-drill@2.3.2": {
   "eligible": false,
@@ -453,32 +453,32 @@
  "apache-airflow-providers-apache-hive@4.1.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "apache-airflow-providers-apache-hive@5.0.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "apache-airflow-providers-apache-hive@5.1.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "apache-airflow-providers-apache-hive@6.0.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "apache-airflow-providers-apache-hive@6.1.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "apache-airflow-providers-apache-hive@6.1.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "apache-airflow-providers-apache-spark@4.0.1": {
   "eligible": false,
@@ -503,7 +503,7 @@
  "apache-airflow-providers-cncf-kubernetes@10.17.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 9
+  "count": 7
  },
  "apache-airflow-providers-cncf-kubernetes@7.0.0": {
   "eligible": false,
@@ -533,7 +533,7 @@
  "apache-airflow-providers-fab@3.6.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 20
+  "count": 14
  },
  "apache-airflow-providers-ftp@3.7.0": {
   "eligible": false,
@@ -543,7 +543,7 @@
  "apache-airflow-providers-google@22.0.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 75
+  "count": 64
  },
  "apache-airflow-providers-google@8.10.0": {
   "eligible": false,
@@ -573,7 +573,7 @@
  "apache-airflow-providers-mysql@6.2.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 5
+  "count": 4
  },
  "apache-airflow-providers-odbc@4.0.0": {
   "eligible": false,
@@ -593,7 +593,7 @@
  "apache-airflow-providers-sftp@5.8.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 5
  },
  "apache-airflow-providers-smtp@3.0.0": {
   "eligible": false,
@@ -603,7 +603,7 @@
  "apache-airflow-providers-snowflake@6.4.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 7
  },
  "apache-airflow@1.10.1": {
   "eligible": false,
@@ -612,27 +612,27 @@
  "apache-airflow@1.10.11": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 52
+  "count": 44
  },
  "apache-airflow@1.10.11rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 52
+  "count": 44
  },
  "apache-airflow@1.10.12": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 52
+  "count": 44
  },
  "apache-airflow@1.10.13": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 57
+  "count": 44
  },
  "apache-airflow@1.10.14": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 61
+  "count": 44
  },
  "apache-airflow@1.10.2": {
   "eligible": false,
@@ -641,12 +641,12 @@
  "apache-airflow@1.10.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 39
+  "count": 37
  },
  "apache-airflow@1.10.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 41
+  "count": 39
  },
  "apache-airflow@1.12.0": {
   "eligible": false,
@@ -655,182 +655,182 @@
  "apache-airflow@2.1.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 64
+  "count": 53
  },
  "apache-airflow@2.1.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 65
+  "count": 54
  },
  "apache-airflow@2.10.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 72
+  "count": 66
  },
  "apache-airflow@2.10.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 72
+  "count": 66
  },
  "apache-airflow@2.10.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 71
+  "count": 65
  },
  "apache-airflow@2.11.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 72
+  "count": 65
  },
  "apache-airflow@2.2.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 62
+  "count": 54
  },
  "apache-airflow@2.2.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 62
+  "count": 54
  },
  "apache-airflow@2.2.4rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 62
+  "count": 54
  },
  "apache-airflow@2.3.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 56
+  "count": 53
  },
  "apache-airflow@2.3.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 56
+  "count": 53
  },
  "apache-airflow@2.3.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 59
+  "count": 56
  },
  "apache-airflow@2.3.4rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 59
+  "count": 56
  },
  "apache-airflow@2.4.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 62
+  "count": 59
  },
  "apache-airflow@2.4.0rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 62
+  "count": 59
  },
  "apache-airflow@2.4.1rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 62
+  "count": 59
  },
  "apache-airflow@2.4.2rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 62
+  "count": 59
  },
  "apache-airflow@2.4.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 62
+  "count": 59
  },
  "apache-airflow@2.5.2rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 63
+  "count": 60
  },
  "apache-airflow@2.6.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 66
+  "count": 63
  },
  "apache-airflow@2.6.0b1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 66
+  "count": 63
  },
  "apache-airflow@2.6.2rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 66
+  "count": 63
  },
  "apache-airflow@2.6.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 67
+  "count": 64
  },
  "apache-airflow@2.7.0b1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 68
+  "count": 66
  },
  "apache-airflow@2.7.0rc2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 68
+  "count": 66
  },
  "apache-airflow@2.7.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 68
+  "count": 66
  },
  "apache-airflow@2.7.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 68
+  "count": 66
  },
  "apache-airflow@2.7.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 69
+  "count": 67
  },
  "apache-airflow@2.8.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 69
+  "count": 67
  },
  "apache-airflow@2.8.0b1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 69
+  "count": 67
  },
  "apache-airflow@2.8.1rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 68
+  "count": 66
  },
  "apache-airflow@2.8.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 67
+  "count": 65
  },
  "apache-airflow@2.8.3rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 68
+  "count": 66
  },
  "apache-airflow@2.9.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 67
+  "count": 65
  },
  "apache-airflow@2.9.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 68
+  "count": 66
  },
  "apache-airflow@2.9.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 68
+  "count": 66
  },
  "apache-airflow@3.0.5": {
   "eligible": false,
@@ -999,12 +999,12 @@
  "apache-superset@4.1.3.post1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 63
+  "count": 61
  },
  "apache-superset@5.0.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 63
+  "count": 61
  },
  "apache-superset@6.0.0": {
   "eligible": false,
@@ -1013,12 +1013,12 @@
  "apm-cli@0.13.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 15
+  "count": 14
  },
  "apm-cli@0.8.12": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 13
+  "count": 12
  },
  "app-store-server-library@3.1.2": {
   "eligible": false,
@@ -1037,7 +1037,7 @@
  "apscheduler@4.0.0a6": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 5
+  "count": 4
  },
  "aptdaemon@1.1.1": {
   "eligible": false,
@@ -1046,12 +1046,12 @@
  "aqt@25.9.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 12
+  "count": 10
  },
  "aqt@25.9.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 12
+  "count": 10
  },
  "arcade-mcp-server@1.9.1": {
   "eligible": false,
@@ -1115,22 +1115,22 @@
  "astrbot@4.16.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 54
+  "count": 53
  },
  "astrbot@4.22.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 57
+  "count": 56
  },
  "astrbot@4.23.6": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 56
+  "count": 55
  },
  "astrbot@4.24.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 56
+  "count": 55
  },
  "astropy@5.3.3": {
   "eligible": false,
@@ -1162,7 +1162,7 @@
  "asyncua@0.9.96": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "attic@0.15": {
   "eligible": false,
@@ -1319,7 +1319,7 @@
  "babeldoc@0.6.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 34
+  "count": 32
  },
  "backend-ai@25.3.3": {
   "eligible": false,
@@ -1333,7 +1333,7 @@
  "banks@2.4.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "barbican@14.0.0": {
   "eligible": false,
@@ -1390,7 +1390,7 @@
  "beets@2.10.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 10
  },
  "bentoml@1.2.5": {
   "eligible": false,
@@ -1400,57 +1400,57 @@
  "bentoml@1.3.9": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 44
+  "count": 43
  },
  "bentoml@1.4.19": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 41
+  "count": 40
  },
  "bentoml@1.4.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 42
+  "count": 41
  },
  "bentoml@1.4.34": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 42
+  "count": 41
  },
  "bentoml@1.4.36": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 42
+  "count": 41
  },
  "bentoml@1.4.37": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 42
+  "count": 41
  },
  "bentoml@1.4.38": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 42
+  "count": 41
  },
  "bentoml@1.4.39": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 42
+  "count": 41
  },
  "bentoml@1.4.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 42
+  "count": 41
  },
  "bentoml@1.4.8": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 42
+  "count": 41
  },
  "bigflow@1.6.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 15
+  "count": 14
  },
  "bikeshed@3.0.0": {
   "eligible": false,
@@ -1480,12 +1480,12 @@
  "black@24.3.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 5
  },
  "black@26.3.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 6
  },
  "blackduck@0.0.53": {
   "eligible": false,
@@ -1495,7 +1495,7 @@
  "blacksheep@2.4.6": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 6
  },
  "bleach@3.1.1": {
   "eligible": true,
@@ -1532,12 +1532,12 @@
  "bokeh@3.8.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 10
+  "count": 9
  },
  "boltz@2.0.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 24
+  "count": 23
  },
  "borgbackup@1.1.3": {
   "eligible": false,
@@ -1574,7 +1574,7 @@
  "briefcase@0.3.26": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 16
+  "count": 14
  },
  "brotli@1.0.8": {
   "eligible": false,
@@ -1583,7 +1583,7 @@
  "browser-use@0.1.45": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 26
  },
  "bsdiff4@1.2.0": {
   "eligible": false,
@@ -1650,17 +1650,17 @@
  "cadwyn@5.4.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "cai-framework@0.5.10": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 25
+  "count": 24
  },
  "cai-framework@0.5.9": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 25
+  "count": 24
  },
  "cairosvg@2.5.1": {
   "eligible": false,
@@ -1700,12 +1700,12 @@
  "calibreweb@0.6.24": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 26
+  "count": 23
  },
  "calibreweb@0.6.25": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 26
+  "count": 23
  },
  "capstone@3.0.5rc2": {
   "eligible": false,
@@ -1730,7 +1730,7 @@
  "ceilometer@12.0.0.0rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 32
+  "count": 31
  },
  "celery@5.2.2": {
   "eligible": false,
@@ -1769,97 +1769,97 @@
  "chainlit@2.8.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 24
+  "count": 23
  },
  "chainlit@2.9.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 24
+  "count": 23
  },
  "changedetection-io@0.40.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 32
+  "count": 31
  },
  "changedetection-io@0.45.13": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 38
+  "count": 36
  },
  "changedetection-io@0.45.21": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 41
+  "count": 39
  },
  "changedetection-io@0.45.22": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 41
+  "count": 39
  },
  "changedetection-io@0.47.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 45
+  "count": 43
  },
  "changedetection-io@0.47.6": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 45
+  "count": 43
  },
  "changedetection-io@0.48.05": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 46
+  "count": 44
  },
  "changedetection-io@0.50.34": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 61
+  "count": 59
  },
  "changedetection-io@0.50.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 55
+  "count": 53
  },
  "changedetection-io@0.53.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 62
+  "count": 60
  },
  "changedetection-io@0.53.7": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 62
+  "count": 60
  },
  "changedetection-io@0.54.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 62
+  "count": 60
  },
  "changedetection-io@0.54.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 62
+  "count": 60
  },
  "changedetection-io@0.54.7": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 62
+  "count": 60
  },
  "changedetection-io@0.54.8": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 62
+  "count": 60
  },
  "changedetection-io@0.54.9": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 62
+  "count": 60
  },
  "changedetection-io@0.55.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 64
+  "count": 62
  },
  "chatterbot@1.2.11": {
   "eligible": false,
@@ -1874,7 +1874,7 @@
  "check-jsonschema@0.30.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 5
  },
  "cherrymusic@0.36.0": {
   "eligible": false,
@@ -1887,12 +1887,12 @@
  "chia-blockchain@2.4.4rc3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 36
+  "count": 32
  },
  "chromadb@1.5.9": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 27
  },
  "ciguard@0.8.2": {
   "eligible": false,
@@ -1920,17 +1920,17 @@
  "clearml@1.14.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 21
+  "count": 13
  },
  "clearml@1.14.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 21
+  "count": 13
  },
  "clearml@2.0.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 12
  },
  "cleo@2.0.0": {
   "eligible": false,
@@ -1940,7 +1940,7 @@
  "clickhouse-driver@0.1.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 4
+  "count": 2
  },
  "cloakbrowser@0.3.28": {
   "eligible": false,
@@ -2011,7 +2011,7 @@
  "colander@1.7.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 3
+  "count": 2
  },
  "collective-contact-widget@1.13": {
   "eligible": false,
@@ -2028,7 +2028,7 @@
  "compliance-trestle@4.1.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 17
  },
  "composio-core@0.4.2": {
   "eligible": false,
@@ -2090,22 +2090,22 @@
  "copier@9.11.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 14
+  "count": 13
  },
  "copier@9.14.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 14
+  "count": 13
  },
  "copier@9.15.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 14
+  "count": 13
  },
  "copier@9.9.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 15
+  "count": 13
  },
  "copyparty@1.16.15": {
   "eligible": false,
@@ -2273,58 +2273,47 @@
  },
  "cryptography@42.0.0": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "cryptography@42.0.2": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "cryptography@42.0.4": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "cryptography@43.0.1": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "cryptography@44.0.1": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "cryptography@46.0.5": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 3
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "cryptography@46.0.6": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 3
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "cryptography@46.0.7": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 3
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "cryptography@48.0.1": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "cryptography@49.0.0": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "cryptography@50.0.0": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "curl-cffi@0.15.0": {
   "eligible": false,
@@ -2343,17 +2332,17 @@
  "cyberdrop-dl-patched@9.14.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 32
+  "count": 26
  },
  "dagster@1.10.16": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 31
+  "count": 24
  },
  "dagster@1.5.11": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 29
+  "count": 27
  },
  "daphne@4.2.2": {
   "eligible": false,
@@ -2373,42 +2362,42 @@
  "dask@2024.8.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 7
  },
  "datachain@0.34.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 35
+  "count": 34
  },
  "datamodel-code-generator@0.60.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 10
+  "count": 5
  },
  "datamodel-code-generator@0.60.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 10
+  "count": 5
  },
  "datamodel-code-generator@0.61.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 10
+  "count": 5
  },
  "datamodel-code-generator@0.62.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 10
+  "count": 5
  },
  "datamodel-code-generator@0.63.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 10
+  "count": 5
  },
  "datamodel-code-generator@0.64.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 10
+  "count": 5
  },
  "datapizza-ai-core@0.0.7": {
   "eligible": false,
@@ -2471,7 +2460,7 @@
  "ddtrace@4.8.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 3
  },
  "deepdiff@8.6.1": {
   "eligible": false,
@@ -2495,12 +2484,12 @@
  "deluge@2.1.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 10
+  "count": 8
  },
  "devpi-server@6.20.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 20
+  "count": 18
  },
  "dfir-unfurl@20250810": {
   "eligible": false,
@@ -2545,7 +2534,7 @@
  "distributed@2021.10.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 14
+  "count": 12
  },
  "distributed@2026.1.0": {
   "eligible": false,
@@ -2700,7 +2689,7 @@
  "django-ses@3.5.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 4
+  "count": 3
  },
  "django-spirit@0.12.3": {
   "eligible": false,
@@ -2737,12 +2726,12 @@
  "django-unicorn@0.36.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "django-unicorn@0.36.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "django-unicorn@0.62.0": {
   "eligible": false,
@@ -2789,7 +2778,7 @@
  "djangorestframework@3.15.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "djangorestframework@3.9.1": {
   "eligible": true,
@@ -2834,17 +2823,17 @@
  "docling@2.61.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 26
  },
  "docling@2.74.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 29
+  "count": 28
  },
  "docling@2.91.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 33
+  "count": 32
  },
  "docling@2.94.0": {
   "eligible": false,
@@ -2867,12 +2856,12 @@
  "dosage@3.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 5
  },
  "dosage@3.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 5
  },
  "dparse@0.5.2": {
   "eligible": false,
@@ -2891,42 +2880,42 @@
  "dtale@3.10.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 122
+  "count": 11
  },
  "dtale@3.14.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 131
+  "count": 11
  },
  "dtale@3.16.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 121
+  "count": 9
  },
  "dtale@3.17.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 120
+  "count": 8
  },
  "dtale@3.20.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 121
+  "count": 10
  },
  "dtale@3.22.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 121
+  "count": 9
  },
  "dtale@3.7.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 116
+  "count": 11
  },
  "dtale@3.9.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 122
+  "count": 11
  },
  "dulwich@0.18.5": {
   "eligible": false,
@@ -2943,7 +2932,7 @@
  "dulwich@1.2.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "dynaconf@3.2.13": {
   "eligible": true,
@@ -2952,7 +2941,7 @@
  "dynamodb-encryption-sdk@1.3.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 4
+  "count": 3
  },
  "easybuild-framework@4.1.2": {
   "eligible": false,
@@ -3037,17 +3026,17 @@
  "esphome@2024.2.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 21
+  "count": 20
  },
  "esphome@2024.2.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 21
+  "count": 20
  },
  "esphome@2024.3.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 22
+  "count": 21
  },
  "esphome@2025.12.7": {
   "eligible": false,
@@ -3159,7 +3148,7 @@
  "eventlet@0.31.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 4
+  "count": 3
  },
  "eventlet@0.40.3": {
   "eligible": false,
@@ -3179,12 +3168,12 @@
  "executorch@0.6.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 21
+  "count": 18
  },
  "executorch@0.7.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 21
+  "count": 18
  },
  "exiv2@0.17.3": {
   "eligible": false,
@@ -3197,7 +3186,7 @@
  "farm-haystack@1.15.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 34
+  "count": 32
  },
  "fast-mcp-telegram@0.19.1": {
   "eligible": false,
@@ -3221,7 +3210,7 @@
  "fastapi-sso@0.19.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 5
  },
  "fastapi-users@15.0.2": {
   "eligible": false,
@@ -3293,12 +3282,12 @@
  "feast@0.40.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 25
+  "count": 24
  },
  "feast@0.54.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 29
+  "count": 28
  },
  "fedmsg@0.18.2": {
   "eligible": false,
@@ -3359,12 +3348,12 @@
  "fiona@1.10b1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 5
  },
  "fiona@1.10b2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 5
  },
  "firefighter-incident@0.0.54": {
   "eligible": false,
@@ -3488,7 +3477,7 @@
  "flask-restx@0.5.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 5
  },
  "flask-reuploaded@1.5.0": {
   "eligible": false,
@@ -3557,7 +3546,7 @@
  "flask@3.1.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "flaskbb@2.2.0": {
   "eligible": false,
@@ -3636,7 +3625,7 @@
  "galaxy-ng@4.9.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 17
  },
  "ganga@8.5.10": {
   "eligible": false,
@@ -3712,12 +3701,12 @@
  "gevent@23.9.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 5
+  "count": 2
  },
  "gi-docgen@2025.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "giskard@2.15.5": {
   "eligible": false,
@@ -3732,87 +3721,87 @@
  "gitpython@3.1.30": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "gitpython@3.1.32": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "gitpython@3.1.33": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "gitpython@3.1.37": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "gitpython@3.1.41": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "gitpython@3.1.47": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "gitpython@3.1.48": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "gitpython@3.1.49": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "gitpython@3.1.50": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "gitpython@3.1.51": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "gitpython@3.1.52": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "gitpython@3.1.53": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "gitpython@3.1.54": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "gitpython@3.1.55": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "gitpython@3.1.56": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "gitpython@3.1.57": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "gitpython@3.1.58": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "glance-store@4.6.1": {
   "eligible": false,
@@ -3832,32 +3821,32 @@
  "glances@4.5.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 5
  },
  "glances@4.5.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 5
  },
  "glances@4.5.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 5
  },
  "glances@4.5.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 5
  },
  "glances@4.5.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 5
  },
  "glances@4.5.6": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 5
  },
  "gluoncv@0.10.0": {
   "eligible": false,
@@ -3867,12 +3856,12 @@
  "google-cloud-aiplatform@1.131.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 14
+  "count": 12
  },
  "google-cloud-aiplatform@1.133.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 13
+  "count": 11
  },
  "gptcache@0.1.44": {
   "eligible": false,
@@ -3947,32 +3936,32 @@
  "gradio@4.31.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 27
+  "count": 24
  },
  "gradio@4.36.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 27
+  "count": 24
  },
  "gradio@4.36.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 27
+  "count": 24
  },
  "gradio@4.37.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 27
+  "count": 24
  },
  "gradio@4.42.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 27
+  "count": 24
  },
  "gradio@4.44.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 27
+  "count": 24
  },
  "gradio@4.9.0": {
   "eligible": false,
@@ -3982,7 +3971,7 @@
  "gradio@5.0.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 25
+  "count": 21
  },
  "gradio@5.0.0-beta.2": {
   "eligible": false,
@@ -3995,52 +3984,52 @@
  "gradio@5.0.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 25
+  "count": 21
  },
  "gradio@5.11.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 22
  },
  "gradio@5.22.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 29
+  "count": 23
  },
  "gradio@5.29.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 29
+  "count": 23
  },
  "gradio@5.31.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 29
+  "count": 23
  },
  "gradio@5.5.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 22
  },
  "gradio@6.15.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 27
  },
  "gradio@6.15.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 27
  },
  "gradio@6.6.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 29
+  "count": 28
  },
  "gradio@6.7.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 29
+  "count": 28
  },
  "gramaddict@1.2.5": {
   "eligible": false,
@@ -4083,9 +4072,8 @@
   "reason": "NO_PORTABLE_WHEEL"
  },
  "guake@3.8.5": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "guarddog@0.1.8": {
   "eligible": false,
@@ -4119,7 +4107,7 @@
  "gunicorn@22.0.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "h11@0.16.0": {
   "eligible": true,
@@ -4168,7 +4156,7 @@
  "ha-mcp@7.0.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 7
  },
  "ha-mcp@7.10.0": {
   "eligible": false,
@@ -4183,7 +4171,7 @@
  "hail@0.2.127": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 35
+  "count": 34
  },
  "haystack-ai@2.3.1": {
   "eligible": false,
@@ -4193,17 +4181,17 @@
  "hermes-agent@0.16.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 22
+  "count": 19
  },
  "hermes-agent@0.18.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 30
+  "count": 26
  },
  "hermes-agent@0.19.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 30
+  "count": 26
  },
  "hnswlib@0.8.0": {
   "eligible": false,
@@ -4298,17 +4286,17 @@
  "httpie@1.0.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 3
+  "count": 2
  },
  "httpie@3.1.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 9
+  "count": 7
  },
  "httpie@3.2.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 11
+  "count": 9
  },
  "httplib2@0.10.1": {
   "eligible": false,
@@ -4336,12 +4324,12 @@
  "hydra-core@1.3.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 4
+  "count": 3
  },
  "hyper-bump-it@0.5.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 5
  },
  "hyperkitty@1.3.5": {
   "eligible": false,
@@ -4372,7 +4360,7 @@
  "imaginairy@15.0.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 34
+  "count": 33
  },
  "imgaug@0.4.0": {
   "eligible": false,
@@ -4463,7 +4451,7 @@
  "instructlab@0.26.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 40
+  "count": 39
  },
  "intake@2.0.9": {
   "eligible": false,
@@ -4473,7 +4461,7 @@
  "internetarchive@5.5.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 5
+  "count": 4
  },
  "invenio-communities@1.0.0a20": {
   "eligible": false,
@@ -4507,22 +4495,22 @@
  "invokeai@5.0.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 56
+  "count": 54
  },
  "invokeai@5.3.0rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 57
+  "count": 55
  },
  "invokeai@5.4.3rc2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 56
+  "count": 54
  },
  "invokeai@6.7.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 37
+  "count": 36
  },
  "ipycache@0.1.4": {
   "eligible": false,
@@ -4539,7 +4527,7 @@
  "ipython@8.10.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 12
+  "count": 9
  },
  "ironic-python-agent@11.6.0": {
   "eligible": false,
@@ -4562,9 +4550,8 @@
   "count": 6
  },
  "jaraco-context@6.1.0": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "jcvi@1.3.5": {
   "eligible": false,
@@ -4647,19 +4634,18 @@
   "count": 7
  },
  "jsonpickle@1.4.2": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "jupyter-core@4.11.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "jupyter-core@5.8.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 3
+  "count": 2
  },
  "jupyter-enterprise-gateway@3.3.0": {
   "eligible": false,
@@ -4669,7 +4655,7 @@
  "jupyter-lsp@2.2.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "jupyter-server-proxy@3.2.1": {
   "eligible": false,
@@ -4679,52 +4665,52 @@
  "jupyter-server@1.0.6": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 13
+  "count": 12
  },
  "jupyter-server@1.1.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 14
+  "count": 13
  },
  "jupyter-server@1.15.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 16
+  "count": 15
  },
  "jupyter-server@2.11.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 18
  },
  "jupyter-server@2.14.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 18
  },
  "jupyter-server@2.17.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 17
  },
  "jupyter-server@2.18.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 17
  },
  "jupyter-server@2.18.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 17
  },
  "jupyter-server@2.20.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 17
  },
  "jupyter-server@2.7.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 18
  },
  "jupyterhub-firstuseauthenticator@1.0.0": {
   "eligible": false,
@@ -4749,27 +4735,27 @@
  "jupyterhub@1.2.0b1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 15
+  "count": 14
  },
  "jupyterhub@1.5.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 15
+  "count": 13
  },
  "jupyterhub@4.1.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 16
+  "count": 13
  },
  "jupyterhub@5.4.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 14
  },
  "jupyterhub@5.4.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 14
  },
  "jupyterlab-git@0.51.1": {
   "eligible": false,
@@ -4784,22 +4770,22 @@
  "jupyterlab@4.4.8": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 15
+  "count": 13
  },
  "jupyterlab@4.5.7": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 15
+  "count": 13
  },
  "jupyterlab@4.5.9": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 15
+  "count": 13
  },
  "jupyterlite-core@0.4.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 3
+  "count": 2
  },
  "justhtml@1.10.0": {
   "eligible": true,
@@ -4867,12 +4853,12 @@
  "kedro-datasets@9.3.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 3
+  "count": 2
  },
  "kedro@0.19.8": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 22
+  "count": 21
  },
  "kedro@0.19.9": {
   "eligible": false,
@@ -4882,7 +4868,7 @@
  "kedro@1.3.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 16
  },
  "keras@2.13.1rc0": {
   "eligible": true,
@@ -4977,7 +4963,7 @@
  "khoj-assistant@1.14.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 50
+  "count": 49
  },
  "khoj@1.29.0": {
   "eligible": false,
@@ -5118,12 +5104,12 @@
  "langchain-chatchat@0.3.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 46
+  "count": 43
  },
  "langchain-chatchat@0.3.1.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 47
+  "count": 44
  },
  "langchain-community@0.0.28": {
   "eligible": false,
@@ -5138,12 +5124,12 @@
  "langchain-community@0.2.9": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 11
+  "count": 9
  },
  "langchain-community@0.3.27": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 13
+  "count": 11
  },
  "langchain-core@0.1.35": {
   "eligible": false,
@@ -5203,72 +5189,72 @@
  "langchain@0.0.225": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 12
+  "count": 11
  },
  "langchain@0.0.236": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 12
+  "count": 11
  },
  "langchain@0.0.247": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 12
+  "count": 11
  },
  "langchain@0.0.312": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 12
+  "count": 11
  },
  "langchain@0.0.317": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 12
+  "count": 11
  },
  "langchain@0.0.325": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 12
+  "count": 11
  },
  "langchain@0.0.329": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 12
+  "count": 11
  },
  "langchain@0.0.353": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 13
+  "count": 12
  },
  "langchain@0.1.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 13
+  "count": 12
  },
  "langflow-base@0.9.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 84
+  "count": 81
  },
  "langflow@1.0.12": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 69
+  "count": 68
  },
  "langflow@1.0.15": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 71
+  "count": 70
  },
  "langflow@1.0.18": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 77
+  "count": 76
  },
  "langflow@1.0.19": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 76
+  "count": 75
  },
  "langflow@1.10.0": {
   "eligible": false,
@@ -5278,22 +5264,22 @@
  "langflow@1.3.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 104
+  "count": 103
  },
  "langflow@1.7.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 122
+  "count": 114
  },
  "langflow@1.7.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 122
+  "count": 114
  },
  "langflow@1.7.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 125
+  "count": 117
  },
  "langflow@1.8.0rc2": {
   "eligible": false,
@@ -5323,7 +5309,7 @@
  "langgraph-api@0.10.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 32
+  "count": 30
  },
  "langgraph-checkpoint-sqlite@2.0.11": {
   "eligible": false,
@@ -5408,17 +5394,17 @@
  "langsmith@0.6.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 7
  },
  "langsmith@0.7.31": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 9
+  "count": 8
  },
  "langsmith@0.8.18": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 10
+  "count": 9
  },
  "ldapcherry@1.0.0": {
   "eligible": false,
@@ -5452,7 +5438,7 @@
  "leo@6.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 13
+  "count": 12
  },
  "letta@0.3.17": {
   "eligible": false,
@@ -5461,12 +5447,12 @@
  "libp2p@0.2.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 16
+  "count": 13
  },
  "libp2p@0.7.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 26
  },
  "libtaxii@1.1.118": {
   "eligible": false,
@@ -5662,17 +5648,17 @@
  "litestar@2.10.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 13
+  "count": 10
  },
  "litestar@2.17.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 16
+  "count": 12
  },
  "litestar@2.22.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 13
  },
  "llama-cpp-python@0.2.72": {
   "eligible": false,
@@ -5702,22 +5688,22 @@
  "llama-index-core@0.12.38": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 25
+  "count": 24
  },
  "llama-index-core@0.12.41": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 25
+  "count": 24
  },
  "llama-index-core@0.12.6": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 23
+  "count": 22
  },
  "llama-index-core@0.13.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 27
  },
  "llama-index-readers-obsidian@0.5.1": {
   "eligible": false,
@@ -5792,7 +5778,7 @@
  "llamafactory@0.9.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 27
+  "count": 25
  },
  "llamafactory@0.9.4": {
   "eligible": false,
@@ -5802,12 +5788,12 @@
  "llm@0.27.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 14
+  "count": 13
  },
  "lmcache@0.4.6": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 34
+  "count": 33
  },
  "lmdb@0.97": {
   "eligible": false,
@@ -5816,27 +5802,27 @@
  "lmdeploy@0.11.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 33
+  "count": 32
  },
  "lmdeploy@0.12.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 35
+  "count": 34
  },
  "lmdeploy@0.12.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 36
+  "count": 34
  },
  "lmdeploy@0.13.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 36
+  "count": 34
  },
  "lmdeploy@0.7.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 25
+  "count": 24
  },
  "lnbits@0.12.12": {
   "eligible": false,
@@ -5846,17 +5832,17 @@
  "local-deep-research@1.3.9": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 63
+  "count": 60
  },
  "local-deep-research@1.6.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 75
+  "count": 72
  },
  "local-deep-research@1.6.10": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 75
+  "count": 72
  },
  "localstack@0.12.10": {
   "eligible": false,
@@ -5877,14 +5863,12 @@
   "reason": "NO_PORTABLE_WHEEL"
  },
  "loguru@0.5.3": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 3
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "loguru@0.6.0": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 3
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "lollms@11.0.0": {
   "eligible": false,
@@ -6047,22 +6031,22 @@
  "marimo@0.16.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 16
  },
  "marimo@0.23.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 17
  },
  "marimo@0.23.9": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 20
+  "count": 18
  },
  "markdown-it-py@2.2.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "markdown2@1.0.1.14": {
   "eligible": false,
@@ -6081,9 +6065,8 @@
   "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "markdown@3.8.1": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "markdownify@0.14.1": {
   "eligible": false,
@@ -6103,7 +6086,7 @@
  "matrix-nio@0.20": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 11
+  "count": 10
  },
  "matrix-sydent@2.5.6": {
   "eligible": false,
@@ -6136,7 +6119,7 @@
  "matrix-synapse@1.152.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 40
+  "count": 38
  },
  "matrix-synapse@1.20.0": {
   "eligible": false,
@@ -6204,32 +6187,32 @@
  "matrix-synapse@1.61.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 29
+  "count": 28
  },
  "matrix-synapse@1.62.0rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 29
+  "count": 28
  },
  "matrix-synapse@1.68.0rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 31
+  "count": 30
  },
  "matrix-synapse@1.69.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 31
+  "count": 30
  },
  "matrix-synapse@1.74.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 31
+  "count": 30
  },
  "matrix-synapse@1.85.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 31
+  "count": 30
  },
  "matrix-synapse@1.93.0": {
   "eligible": false,
@@ -6264,12 +6247,12 @@
  "mcp-atlassian@0.17.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 24
+  "count": 23
  },
  "mcp-atlassian@0.22.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 26
+  "count": 25
  },
  "mcp-contextforge-gateway@1.0.3": {
   "eligible": false,
@@ -6284,22 +6267,22 @@
  "mcp-memory-service@10.21.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 25
+  "count": 24
  },
  "mcp-memory-service@10.25.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 25
+  "count": 24
  },
  "mcp-memory-service@10.65.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 27
+  "count": 26
  },
  "mcp-memory-service@10.67.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 27
+  "count": 26
  },
  "mcp-neo4j-cypher@0.4.0": {
   "eligible": false,
@@ -6348,27 +6331,27 @@
  "mcp@1.10.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 10
+  "count": 9
  },
  "mcp@1.23.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 14
+  "count": 12
  },
  "mcp@1.27.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 14
+  "count": 12
  },
  "mcp@1.28.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 10
  },
  "mcp@1.9.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 9
+  "count": 8
  },
  "mechanicalsoup@1.3.0": {
   "eligible": false,
@@ -6402,7 +6385,7 @@
  "memray@1.19.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 4
+  "count": 3
  },
  "meraki@1.40.1": {
   "eligible": false,
@@ -6564,12 +6547,12 @@
  "mindsdb@25.11.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 77
+  "count": 75
  },
  "mindsdb@25.14.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 46
+  "count": 44
  },
  "mindsdb@25.9.1.1": {
   "eligible": false,
@@ -6579,7 +6562,7 @@
  "mindsdb@26.0.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 49
+  "count": 47
  },
  "mindspore@2.0.0-rc1": {
   "eligible": false,
@@ -6603,7 +6586,7 @@
  "mistral@10.0.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 40
+  "count": 38
  },
  "mistral@7.0.1": {
   "eligible": false,
@@ -6623,49 +6606,46 @@
   "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "mistune@3.2.0": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "mistune@3.2.1": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "mistune@3.3.0": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "mitmproxy@11.1.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 26
+  "count": 25
  },
  "mitmproxy@12.1.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 27
+  "count": 25
  },
  "mitmproxy@12.2.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 27
+  "count": 25
  },
  "mitmproxy@4.0.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 20
+  "count": 19
  },
  "mitmproxy@7.0.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 26
+  "count": 25
  },
  "mitmproxy@8.0.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 26
+  "count": 25
  },
  "mitogen@0.2.8": {
   "eligible": false,
@@ -6689,197 +6669,197 @@
  "mlflow@1.23.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 23
+  "count": 21
  },
  "mlflow@2.0.0rc0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 24
  },
  "mlflow@2.10.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 24
  },
  "mlflow@2.10.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 24
  },
  "mlflow@2.11.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 24
  },
  "mlflow@2.12.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 24
  },
  "mlflow@2.13.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 31
+  "count": 27
  },
  "mlflow@2.13.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 31
+  "count": 27
  },
  "mlflow@2.14.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 31
+  "count": 27
  },
  "mlflow@2.16.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 13
  },
  "mlflow@2.17.0rc0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 13
  },
  "mlflow@2.17.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 13
  },
  "mlflow@2.19.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 13
  },
  "mlflow@2.2.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 29
+  "count": 25
  },
  "mlflow@2.20.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 13
  },
  "mlflow@2.22.0rc0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 13
  },
  "mlflow@2.3.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 24
  },
  "mlflow@2.3.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 24
  },
  "mlflow@2.5.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 24
  },
  "mlflow@2.6.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 24
  },
  "mlflow@2.8.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 29
+  "count": 25
  },
  "mlflow@2.8.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 24
  },
  "mlflow@2.9.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 24
  },
  "mlflow@2.9.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 24
  },
  "mlflow@3.10.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 17
  },
  "mlflow@3.10.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 17
  },
  "mlflow@3.11.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 17
  },
  "mlflow@3.11.0rc0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 17
  },
  "mlflow@3.11.0rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 17
  },
  "mlflow@3.11.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 20
+  "count": 18
  },
  "mlflow@3.13.0rc0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 20
+  "count": 18
  },
  "mlflow@3.15.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 20
+  "count": 18
  },
  "mlflow@3.4.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 15
  },
  "mlflow@3.4.0rc0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 15
  },
  "mlflow@3.5.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 16
  },
  "mlflow@3.8.0rc0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 16
  },
  "mlflow@3.8.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 16
  },
  "mlflow@3.9.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 17
  },
  "mlflow@3.9.0rc0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 17
  },
  "mlrun@1.12.0rc3": {
   "eligible": false,
@@ -6888,13 +6868,12 @@
  },
  "mlx@0.29.4": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "mobsf@3.9.7": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 31
+  "count": 29
  },
  "mobsf@3.9.8": {
   "eligible": false,
@@ -6919,7 +6898,7 @@
  "mobsf@4.3.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 38
+  "count": 36
  },
  "mobsf@4.3.3": {
   "eligible": false,
@@ -6932,7 +6911,7 @@
  "mobsf@4.4.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 38
+  "count": 36
  },
  "mobsf@4.4.6": {
   "eligible": false,
@@ -6941,7 +6920,7 @@
  "mobsf@4.5.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 38
+  "count": 36
  },
  "mobsfscan@0.3.8": {
   "eligible": false,
@@ -7140,7 +7119,7 @@
  "nanobot-ai@0.2.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 39
+  "count": 38
  },
  "nautobot-ssot@3.10.0": {
   "eligible": false,
@@ -7150,7 +7129,7 @@
  "nautobot@1.5.7": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 43
+  "count": 42
  },
  "nbconvert@6.5.1": {
   "eligible": false,
@@ -7160,12 +7139,12 @@
  "nbconvert@7.17.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 15
+  "count": 14
  },
  "nbconvert@7.17.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 15
+  "count": 14
  },
  "nebari@2024.4.1": {
   "eligible": false,
@@ -7180,12 +7159,12 @@
  "nemo-toolkit@2.6.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 16
  },
  "nemo-toolkit@2.6.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 16
  },
  "netbox-data-flows@1.5.1": {
   "eligible": true,
@@ -7218,52 +7197,52 @@
  "nicegui@1.4.21": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 16
  },
  "nicegui@2.9.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 20
+  "count": 19
  },
  "nicegui@3.0.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 21
+  "count": 20
  },
  "nicegui@3.10.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 22
+  "count": 21
  },
  "nicegui@3.12.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 25
+  "count": 24
  },
  "nicegui@3.4.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 21
+  "count": 20
  },
  "nicegui@3.5.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 21
+  "count": 20
  },
  "nicegui@3.7.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 21
+  "count": 20
  },
  "nicegui@3.8.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 21
+  "count": 20
  },
  "nicegui@3.9.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 22
+  "count": 21
  },
  "nicotine-plus@3.2.1": {
   "eligible": false,
@@ -7312,7 +7291,7 @@
  "nonebot2@2.2.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "nono-py@0.10.1": {
   "eligible": false,
@@ -7336,17 +7315,17 @@
  "notebook@5.7.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 14
+  "count": 13
  },
  "notebook@5.7.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 14
+  "count": 13
  },
  "notebook@5.7.8": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 14
+  "count": 13
  },
  "notebook@6.1.5": {
   "eligible": false,
@@ -7465,72 +7444,72 @@
  "octoprint@1.10.0rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 48
+  "count": 47
  },
  "octoprint@1.10.0rc3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 48
+  "count": 47
  },
  "octoprint@1.10.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 48
+  "count": 47
  },
  "octoprint@1.10.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 48
+  "count": 47
  },
  "octoprint@1.11.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 68
+  "count": 30
  },
  "octoprint@1.11.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 68
+  "count": 30
  },
  "octoprint@1.11.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 68
+  "count": 30
  },
  "octoprint@1.11.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 70
+  "count": 30
  },
  "octoprint@1.11.6": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 70
+  "count": 30
  },
  "octoprint@1.6.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 48
+  "count": 36
  },
  "octoprint@1.7.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 54
+  "count": 33
  },
  "octoprint@1.8.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 39
+  "count": 38
  },
  "octoprint@1.8.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 42
+  "count": 41
  },
  "octoprint@1.9.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 46
+  "count": 45
  },
  "ogham-mcp@0.11.1": {
   "eligible": false,
@@ -7604,12 +7583,12 @@
  "onnx@1.21.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 5
+  "count": 3
  },
  "onnx@1.21.0rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 5
+  "count": 3
  },
  "onnx@1.22.0": {
   "eligible": false,
@@ -7773,7 +7752,7 @@
  "openapi-python-client@0.5.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 11
+  "count": 9
  },
  "openbabel@3.2.0": {
   "eligible": false,
@@ -7809,23 +7788,19 @@
  },
  "opencv-contrib-python-headless@4.8.1.78": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 9
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "opencv-contrib-python@4.8.1.78": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 9
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "opencv-python-headless@4.8.1.78": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 9
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "opencv-python@4.8.1.78": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 9
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "opendiamond@10.1.1": {
   "eligible": false,
@@ -7857,7 +7832,7 @@
  "openssl-encrypt@1.4.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 23
+  "count": 22
  },
  "openstack-cyborg@16.0.1": {
   "eligible": false,
@@ -7872,7 +7847,7 @@
  "openstack-heat@22.0.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 63
+  "count": 61
  },
  "opentelemetry-instrumentation@0.41b0": {
   "eligible": false,
@@ -7953,7 +7928,7 @@
  "owslib@0.28.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 5
  },
  "oxidize-pdf@0.5.0": {
   "eligible": false,
@@ -7988,7 +7963,7 @@
  "pandasai@2.4.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 16
+  "count": 14
  },
  "paramiko@1.7.1-3": {
   "eligible": false,
@@ -8047,17 +8022,17 @@
  "pdm@2.27.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 23
+  "count": 22
  },
  "pdm@2.9.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 20
+  "count": 16
  },
  "pdoc@14.5.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 4
+  "count": 3
  },
  "personnummer@3.0.2": {
   "eligible": false,
@@ -8075,82 +8050,82 @@
  "pgadmin4@6.14": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 47
+  "count": 40
  },
  "pgadmin4@6.17": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 46
+  "count": 39
  },
  "pgadmin4@6.19": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 52
+  "count": 36
  },
  "pgadmin4@6.7": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 40
+  "count": 37
  },
  "pgadmin4@7.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 44
+  "count": 42
  },
  "pgadmin4@7.7": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 45
+  "count": 43
  },
  "pgadmin4@8.12": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 47
+  "count": 40
  },
  "pgadmin4@8.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 54
+  "count": 35
  },
  "pgadmin4@8.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 54
+  "count": 35
  },
  "pgadmin4@8.6": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 55
+  "count": 34
  },
  "pgadmin4@9.10": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 46
+  "count": 38
  },
  "pgadmin4@9.11": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 47
+  "count": 37
  },
  "pgadmin4@9.12": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 48
+  "count": 39
  },
  "pgadmin4@9.15": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 52
+  "count": 35
  },
  "pgadmin4@9.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 50
+  "count": 34
  },
  "pgadmin4@9.8": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 46
+  "count": 38
  },
  "pghoard@2.1.0": {
   "eligible": false,
@@ -8397,17 +8372,17 @@
  "pipecat-ai@0.0.94": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 15
  },
  "pipecat-ai@1.2.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 17
  },
  "pipecat-ai@1.4.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 22
+  "count": 20
  },
  "pipenv@2022.1.8": {
   "eligible": false,
@@ -8431,7 +8406,7 @@
  "playwrightcapture@1.39.6": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 16
+  "count": 14
  },
  "plone-app-contenttypes@2.2.3": {
   "eligible": false,
@@ -8441,7 +8416,7 @@
  "plone-restapi@8.43.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 7
  },
  "plone@3.3.6": {
   "eligible": false,
@@ -8514,17 +8489,17 @@
  "poetry@1.1.9": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 25
+  "count": 14
  },
  "poetry@2.3.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 22
+  "count": 20
  },
  "poetry@2.3.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 22
+  "count": 20
  },
  "pollbot@1.4.6": {
   "eligible": false,
@@ -8690,37 +8665,37 @@
  "prefect@2.16.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 49
+  "count": 46
  },
  "prefect@3.6.14": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 55
+  "count": 52
  },
  "prefect@3.6.18": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 56
+  "count": 53
  },
  "prefect@3.6.22": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 56
+  "count": 53
  },
  "prefect@3.6.22.dev7": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 56
+  "count": 53
  },
  "prefect@3.6.25.dev7": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 56
+  "count": 53
  },
  "prefect@3.6.28.dev2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 56
+  "count": 53
  },
  "pretalx@2.3.2": {
   "eligible": false,
@@ -8831,7 +8806,7 @@
  "psd-tools@1.12.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 4
+  "count": 3
  },
  "psd-tools@1.17.1": {
   "eligible": false,
@@ -8864,7 +8839,7 @@
  "pulpcore@3.56.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 45
+  "count": 44
  },
  "puncia@0.21": {
   "eligible": false,
@@ -8892,12 +8867,12 @@
  "py7zr@0.20.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 11
+  "count": 7
  },
  "py7zr@1.1.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 10
+  "count": 6
  },
  "py@1.10.0": {
   "eligible": true,
@@ -8919,7 +8894,7 @@
  "pyarrow@0.15.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 4
+  "count": 2
  },
  "pyarrow@14.0.1": {
   "eligible": false,
@@ -8972,17 +8947,17 @@
  "pycti@6.1.9": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 14
+  "count": 12
  },
  "pycti@6.8.16": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 16
  },
  "pycti@6.9.7": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 16
  },
  "pydantic-settings@2.14.2": {
   "eligible": false,
@@ -8999,8 +8974,7 @@
  },
  "pyfory@1.0.0": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "pyftpdlib@0.5.2": {
   "eligible": false,
@@ -9034,12 +9008,12 @@
  "pyinstaller@5.13.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 3
  },
  "pyinstaller@6.0.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 4
  },
  "pyjwt@1.5.1": {
   "eligible": true,
@@ -9050,9 +9024,8 @@
   "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pyjwt@2.13.0": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pyjwt@2.4.0": {
   "eligible": true,
@@ -9122,52 +9095,52 @@
  "pyload-ng@0.5.0b3.dev75": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 12
  },
  "pyload-ng@0.5.0b3.dev77": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 12
  },
  "pyload-ng@0.5.0b3.dev78": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 13
  },
  "pyload-ng@0.5.0b3.dev79": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 13
  },
  "pyload-ng@0.5.0b3.dev85": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 12
  },
  "pyload-ng@0.5.0b3.dev87": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 12
  },
  "pyload-ng@0.5.0b3.dev88": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 12
  },
  "pyload-ng@0.5.0b3.dev89": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 20
+  "count": 13
  },
  "pyload-ng@0.5.0b3.dev90": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 20
+  "count": 13
  },
  "pyload-ng@0.5.0b3.dev91": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 20
+  "count": 13
  },
  "pyload-ng@0.5.0b3.dev92": {
   "eligible": false,
@@ -9266,12 +9239,12 @@
  "pyopenssl@26.0.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "pyp2spec@0.14.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "pypdf2@1.27.5": {
   "eligible": true,
@@ -9282,139 +9255,112 @@
   "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@3.17.0": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.0.0": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.1.3": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.10.0": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.10.1": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.10.2": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.12.0": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.12.1": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.12.2": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.13.0": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.13.1": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.13.3": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.14.0": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.14.1": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.14.2": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.15.0": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.4.0": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.6.0": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.6.2": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.7.1": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.7.2": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.7.3": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.7.4": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.7.5": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.8.0": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.9.1": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypdf@6.9.2": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "pypickle@2.0.0": {
   "eligible": true,
@@ -9432,12 +9378,11 @@
  "pypop-genomics@1.0.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 4
+  "count": 2
  },
  "pypqc@0.0.6.2": {
   "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "reason": "NO_PORTABLE_WHEEL"
  },
  "pypxe@1.8.4": {
   "eligible": false,
@@ -9520,12 +9465,12 @@
  "pyspector@0.1.7": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "pyspector@0.1.8": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 6
  },
  "pyspider@0.3.10": {
   "eligible": false,
@@ -9539,7 +9484,7 @@
  "pytest@9.0.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 4
  },
  "python-a2a@0.5.6": {
   "eligible": false,
@@ -9602,9 +9547,8 @@
   "count": 3
  },
  "python-jwt@3.3.4": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "python-keystoneclient@0.2.4": {
   "eligible": false,
@@ -9775,7 +9719,7 @@
  "qdrant-client@1.9.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 9
+  "count": 6
  },
  "qiskit-ibm-runtime@0.21.2": {
   "eligible": false,
@@ -9824,7 +9768,7 @@
  "rasa@2.8.10": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 64
+  "count": 62
  },
  "ray@2.40.0": {
   "eligible": false,
@@ -9864,7 +9808,7 @@
  "ray@2.8.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 12
+  "count": 10
  },
  "rdiffweb@2.4.1": {
   "eligible": false,
@@ -9978,22 +9922,22 @@
  "red-discordbot@3.3.11": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 26
+  "count": 24
  },
  "red-discordbot@3.3.12": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 26
+  "count": 24
  },
  "red-discordbot@3.4.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 27
+  "count": 25
  },
  "red-discordbot@3.5.10": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 37
+  "count": 30
  },
  "redshift-connector@2.1.14": {
   "eligible": false,
@@ -10008,7 +9952,7 @@
  "reflex@0.8.14": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 16
  },
  "refuel-autolabel@0.0.16": {
   "eligible": false,
@@ -10172,7 +10116,7 @@
  "rpc-py@0.6.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "rply@0.7.1": {
   "eligible": true,
@@ -10195,7 +10139,7 @@
  "rsa@4.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "rsa@4.7": {
   "eligible": false,
@@ -10209,7 +10153,7 @@
  "rtv@1.19.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 5
  },
  "rucio-webui@1.26.7": {
   "eligible": false,
@@ -10316,7 +10260,7 @@
  "sanic@20.12.6": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 7
+  "count": 5
  },
  "sap-ai-sdk-base@3.3.0": {
   "eligible": false,
@@ -10334,12 +10278,12 @@
  "scancodeio@32.5.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 28
+  "count": 27
  },
  "scancodeio@32.5.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 29
+  "count": 28
  },
  "scapy@2.4.1": {
   "eligible": false,
@@ -10405,22 +10349,22 @@
  "scrapy@2.11.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 16
  },
  "scrapy@2.11.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 17
  },
  "scrapy@2.14.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 16
  },
  "scrapy@2.15.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 16
  },
  "searchor@2.4.2": {
   "eligible": false,
@@ -10430,12 +10374,12 @@
  "semantic-kernel@1.39.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 25
+  "count": 23
  },
  "semantic-kernel@1.39.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 26
+  "count": 24
  },
  "semantic-router@0.1.15": {
   "eligible": false,
@@ -10449,7 +10393,7 @@
  "sentry-sdk@1.14.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 4
+  "count": 1
  },
  "sentry@22.11.0": {
   "eligible": false,
@@ -10484,7 +10428,7 @@
  "serena-agent@1.5.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 32
+  "count": 31
  },
  "setuptools@0.7": {
   "eligible": false,
@@ -10509,22 +10453,22 @@
  "sglang@0.5.10": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 62
+  "count": 59
  },
  "sglang@0.5.10.post1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 62
+  "count": 59
  },
  "sglang@0.5.11": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 64
+  "count": 61
  },
  "sglang@0.5.12": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 67
+  "count": 64
  },
  "sglang@0.5.4": {
   "eligible": false,
@@ -10534,7 +10478,7 @@
  "sglang@0.5.9": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 64
+  "count": 62
  },
  "sh@2.2.4": {
   "eligible": true,
@@ -10584,12 +10528,12 @@
  "sigstore@3.6.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 15
+  "count": 14
  },
  "sigstore@4.2.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 15
+  "count": 14
  },
  "simiki@1.6.2.2": {
   "eligible": false,
@@ -10621,7 +10565,7 @@
  "skyvern@0.2.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 57
+  "count": 49
  },
  "slippers@0.6.3": {
   "eligible": false,
@@ -10682,17 +10626,17 @@
  "snowflake-connector-python@3.0.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 17
+  "count": 16
  },
  "snowflake-connector-python@3.12.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 16
  },
  "snowflake-connector-python@3.13.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 16
  },
  "social-auth-app-django@5.4.1": {
   "eligible": false,
@@ -10740,7 +10684,7 @@
  "spotipy@2.22.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 5
+  "count": 4
  },
  "spotipy@2.25.1": {
   "eligible": false,
@@ -10759,7 +10703,7 @@
  "sqladmin@0.25.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 4
  },
  "sqlalchemy@0.7.0b4": {
   "eligible": false,
@@ -10776,17 +10720,17 @@
  "sqlfluff@2.1.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 16
+  "count": 13
  },
  "sqlfluff@4.1.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 13
+  "count": 12
  },
  "sqlfluff@4.2.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 12
+  "count": 11
  },
  "sqlite-vec@0.1.3": {
   "eligible": false,
@@ -10828,7 +10772,7 @@
  "stanza@1.12.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 10
+  "count": 9
  },
  "starkbank-ecdsa@2.0.1": {
   "eligible": false,
@@ -10837,57 +10781,57 @@
  "starlette@0.25.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "starlette@0.27.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "starlette@0.36.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "starlette@0.40.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "starlette@0.47.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "starlette@0.49.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "starlette@1.0.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "starlette@1.1.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "starlette@1.3.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "starlette@1.3.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 2
+  "count": 1
  },
  "starlite@1.51.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 12
+  "count": 11
  },
  "stata-mcp@1.13.0": {
   "eligible": false,
@@ -10922,7 +10866,7 @@
  "strawberry-graphql@0.243.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 4
+  "count": 3
  },
  "strawberry-graphql@0.257.0": {
   "eligible": false,
@@ -10947,37 +10891,37 @@
  "streamlink@8.4.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 14
+  "count": 10
  },
  "streamlit@0.81.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 21
+  "count": 19
  },
  "streamlit@1.11.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 25
+  "count": 24
  },
  "streamlit@1.30.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 23
+  "count": 22
  },
  "streamlit@1.37.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 18
  },
  "streamlit@1.53.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 17
  },
  "streamlit@1.54.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 17
  },
  "streampipes@0.97.0": {
   "eligible": false,
@@ -11004,17 +10948,17 @@
  "swingmusic@2.1.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 29
+  "count": 27
  },
  "syft@0.9.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 48
+  "count": 46
  },
  "synthcity@0.2.9": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 27
+  "count": 25
  },
  "systemds@2.2.2": {
   "eligible": false,
@@ -11104,7 +11048,7 @@
  "thefuck@3.31": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 9
+  "count": 5
  },
  "thumbor@7.8.0": {
   "eligible": false,
@@ -11139,7 +11083,7 @@
  "topydo@0.13": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 3
+  "count": 1
  },
  "torbot@4.0.0": {
   "eligible": false,
@@ -11149,32 +11093,32 @@
  "torch@1.13.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 5
+  "count": 1
  },
  "torch@2.10.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 24
+  "count": 6
  },
  "torch@2.13.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 14
+  "count": 7
  },
  "torch@2.2.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 18
+  "count": 6
  },
  "torch@2.3.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 19
+  "count": 6
  },
  "torch@2.6.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 21
+  "count": 5
  },
  "torch@2.7.1-rc1": {
   "eligible": false,
@@ -11183,12 +11127,12 @@
  "torch@2.8.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 22
+  "count": 6
  },
  "torch@2.9.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 23
+  "count": 6
  },
  "torchgeo@0.6.1": {
   "eligible": false,
@@ -11260,9 +11204,8 @@
   "count": 10
  },
  "tqdm@4.66.3": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "trac@0.11.2": {
   "eligible": false,
@@ -11275,7 +11218,7 @@
  "transformers@4.30.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 11
+  "count": 10
  },
  "transformers@4.36.0": {
   "eligible": false,
@@ -11334,7 +11277,7 @@
  "transmute-core@1.13.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 9
+  "count": 7
  },
  "trapster@1.2.0": {
   "eligible": false,
@@ -11430,22 +11373,22 @@
  "twisted@22.1.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 7
  },
  "twisted@22.10.0rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 7
  },
  "twisted@22.4.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 7
  },
  "twisted@23.10.0rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 7
  },
  "twisted@24.7.0rc1": {
   "eligible": false,
@@ -11611,7 +11554,7 @@
  "uvicorn@0.11.7": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 5
+  "count": 3
  },
  "uwsgi@2.0.17": {
   "eligible": false,
@@ -11718,87 +11661,87 @@
  "virtualenv@20.26.6": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 4
+  "count": 3
  },
  "virtualenv@20.36.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 2
  },
  "vllm@0.10.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 56
+  "count": 48
  },
  "vllm@0.10.1.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 57
+  "count": 49
  },
  "vllm@0.11.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 57
+  "count": 49
  },
  "vllm@0.11.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 58
+  "count": 53
  },
  "vllm@0.12.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 57
+  "count": 53
  },
  "vllm@0.13.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 59
+  "count": 55
  },
  "vllm@0.14.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 60
+  "count": 56
  },
  "vllm@0.14.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 60
+  "count": 56
  },
  "vllm@0.18.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 64
+  "count": 60
  },
  "vllm@0.19.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 65
+  "count": 61
  },
  "vllm@0.19.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 65
+  "count": 61
  },
  "vllm@0.20.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 68
+  "count": 64
  },
  "vllm@0.22.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 71
+  "count": 67
  },
  "vllm@0.24.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 72
+  "count": 68
  },
  "vllm@0.26.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 73
+  "count": 68
  },
  "vllm@0.5.0.post1": {
   "eligible": false,
@@ -11808,52 +11751,52 @@
  "vllm@0.5.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 34
+  "count": 32
  },
  "vllm@0.6.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 35
+  "count": 33
  },
  "vllm@0.6.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 38
+  "count": 33
  },
  "vllm@0.7.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 44
+  "count": 38
  },
  "vllm@0.7.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 45
+  "count": 39
  },
  "vllm@0.8.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 48
+  "count": 44
  },
  "vllm@0.8.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 48
+  "count": 44
  },
  "vllm@0.8.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 56
+  "count": 49
  },
  "vllm@0.8.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 56
+  "count": 49
  },
  "vllm@0.9.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 57
+  "count": 49
  },
  "vyper@0.1.0b16": {
   "eligible": false,
@@ -11873,7 +11816,7 @@
  "vyper@0.3.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 4
+  "count": 3
  },
  "vyper@0.3.10": {
   "eligible": false,
@@ -11888,12 +11831,12 @@
  "vyper@0.3.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 4
  },
  "vyper@0.3.4": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 4
  },
  "vyper@0.3.8": {
   "eligible": false,
@@ -11958,7 +11901,7 @@
  "wandb@0.17.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 15
+  "count": 10
  },
  "wasmtime@0.27.0": {
   "eligible": true,
@@ -12027,22 +11970,22 @@
  "weblate@5.14.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 70
+  "count": 68
  },
  "weblate@5.15": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 73
+  "count": 71
  },
  "weblate@5.15.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 73
+  "count": 71
  },
  "weblate@5.15.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 73
+  "count": 71
  },
  "weblate@5.16.0": {
   "eligible": false,
@@ -12070,9 +12013,8 @@
   "count": 56
  },
  "webob@1.8.10": {
-  "eligible": false,
-  "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 1
+  "eligible": true,
+  "reason": "ZERO_DEPS_PORTABLE_WHEEL"
  },
  "webob@1.8.8": {
   "eligible": true,
@@ -12247,7 +12189,7 @@
  "wooey@0.13.3rc1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 10
+  "count": 7
  },
  "wordops@3.21.0": {
   "eligible": false,
@@ -12277,17 +12219,17 @@
  "xgrammar@0.1.18": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 6
  },
  "xgrammar@0.1.21": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 4
  },
  "xgrammar@0.1.32": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 5
  },
  "xhtml2pdf@0.2.16": {
   "eligible": false,
@@ -12344,32 +12286,32 @@
  "yt-dlp@2023.09.24": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 4
  },
  "yt-dlp@2023.11.14": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 9
+  "count": 6
  },
  "yt-dlp@2023.7.06": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 6
+  "count": 4
  },
  "yt-dlp@2024.04.09": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 6
  },
  "yt-dlp@2024.07.01": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 6
  },
  "yt-dlp@2024.07.07": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 8
+  "count": 6
  },
  "yt-dlp@2026.02.21": {
   "eligible": true,
@@ -12396,37 +12338,37 @@
  "zenml@0.55.5": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 22
+  "count": 21
  },
  "zenml@0.56.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 22
+  "count": 21
  },
  "zenml@0.56.3": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 22
+  "count": 21
  },
  "zenml@0.57.0rc2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 23
+  "count": 22
  },
  "zenml@0.57.1": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 23
+  "count": 22
  },
  "zenml@0.68.0": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 21
+  "count": 20
  },
  "zenml@0.84.2": {
   "eligible": false,
   "reason": "HAS_RUNTIME_DEPENDENCIES",
-  "count": 21
+  "count": 20
  },
  "zeroconf@0.149.12": {
   "eligible": false,

@@ -38,3 +38,9 @@ test(
   { todo: 'openOrFindPullRequest — the write path is not yet idempotent' },
   () => {},
 );
+
+test('an advisory id in either case names the same branch', () => {
+  // Two spellings of one advisory must not become two branches: the branch name is
+  // what lets a repeated write find the first write's work.
+  assert.equal(branchNameFor('GHSA-X7JH-595Q-WQ82'), branchNameFor('GHSA-x7jh-595q-wq82'));
+});

@@ -50,7 +50,14 @@ def runtime_requirements(name: str, version: str, timeout: int = 30) -> list[str
             info = json.load(r).get("info", {})
     except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError):
         return None
-    return [d for d in (info.get("requires_dist") or []) if "extra ==" not in d]
+    required = [d for d in (info.get("requires_dist") or []) if "extra ==" not in d]
+    # A dependency behind an environment marker -- python_version, sys_platform -- may
+    # not apply on the interpreter the probe runs on. Evaluating PEP 508 markers needs a
+    # parser this module deliberately does not have, so they are reported separately and
+    # do not by themselves make a release ineligible. If such a dependency does turn out
+    # to be needed, the import fails and the probe is INCONCLUSIVE, which is refused
+    # rather than reported. Being wrong here costs a probe, never a wrong answer.
+    return [d for d in required if ";" not in d]
 
 
 def wheel_for(name: str, version: str, timeout: int = 30) -> dict | None:
@@ -73,6 +80,27 @@ def wheel_for(name: str, version: str, timeout: int = 30) -> dict | None:
     return None
 
 
+def safe_extract(zf: zipfile.ZipFile, dest: Path) -> None:
+    """Extract, refusing any member that would land outside `dest`.
+
+    CPython's `extractall` already strips `..` segments and leading separators, and
+    writes symlink entries as ordinary files -- verified on 3.14, and the behaviour is
+    long-standing. So this is not closing an exploitable hole today.
+
+    It is here because the current safety of this function is an undocumented property
+    of the standard library rather than anything this code states or checks, and this
+    is the one place in the project where an archive from an unreviewed third party is
+    unpacked. A matching digest proves PyPI served that wheel; it proves nothing about
+    what is inside it.
+    """
+    root = dest.resolve()
+    for member in zf.infolist():
+        target = (dest / member.filename).resolve()
+        if target != root and root not in target.parents:
+            raise ValueError(f"archive member escapes the extraction directory: {member.filename!r}")
+    zf.extractall(dest)
+
+
 def fetch_and_extract(wheel: dict, into: Path, timeout: int = 60) -> Path:
     """Download, verify the digest PyPI published, unzip. Digest first, always."""
     with urllib.request.urlopen(wheel["url"], timeout=timeout) as r:
@@ -85,7 +113,7 @@ def fetch_and_extract(wheel: dict, into: Path, timeout: int = 60) -> Path:
     archive.write_bytes(blob)
     site = into / "site"
     with zipfile.ZipFile(archive) as zf:
-        zf.extractall(site)
+        safe_extract(zf, site)
     return site
 
 
@@ -135,6 +163,10 @@ def differential(name: str, before: str, after: str, probe: Path) -> dict:
         out["reason"] = f"no portable wheel at {', '.join(missing)}"
         return out
     reqs_before = runtime_requirements(name, before)
+    if reqs_before is None:
+        out["eligible"] = False
+        out["reason"] = f"dependency metadata unavailable for {name} {before}"
+        return out
     if reqs_before:
         out["eligible"] = False
         out["reason"] = f"{len(reqs_before)} runtime dependencies; no installer to acquire them"

@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import type { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { Boundary, narrowingIsSufficientlyEvidenced } from './evidence.ts';
-import { branchNameFor, redact } from './github.ts';
+import { branchNameFor, GHSA_ID, redact } from './github.ts';
 
 /**
  * Annotations are not documentation. TrueForge resolves its approval policy entirely
@@ -27,7 +27,7 @@ const WRITE_ANNOTATIONS = {
 export const WRITE_TOOL_NAMES = ['open_boundary_correction', 'publish_repo_advisory'] as const;
 
 const CorrectionInput = {
-  advisory_id: z.string().regex(/^GHSA-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}$/),
+  advisory_id: z.string().regex(GHSA_ID),
   package_name: z.string().min(1),
   /** What the register says today. Recorded so the PR shows the delta, not just the result. */
   published_range: z.string().min(1),

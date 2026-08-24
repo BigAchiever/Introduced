@@ -396,19 +396,21 @@
  {
   "arm": "C",
   "cites_commit": false,
-  "cves": [],
-  "fixed": [
-   "0.3.2"
+  "cves": [
+   "CVE-2025-69534"
   ],
-  "ghsa": "GHSA-879p-8gw4-mcpw",
+  "fixed": [
+   "3.8.1"
+  ],
+  "ghsa": "GHSA-5wmx-573v-2qwq",
   "introduced": [
    "0"
   ],
-  "n_versions": 15,
-  "package": "fgr",
+  "n_versions": 54,
+  "package": "markdown",
   "probe_eligible": true,
-  "pysec_id": null,
-  "repo": "https://github.com/dan1hc/fgr",
+  "pysec_id": "PYSEC-2026-89",
+  "repo": "https://github.com/Python-Markdown/markdown",
   "split": "dev"
  },
  {

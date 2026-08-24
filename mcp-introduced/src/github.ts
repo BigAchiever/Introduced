@@ -45,8 +45,15 @@ export interface PullRequestRef {
  * A name derived from the advisory — rather than a timestamp or a random suffix —
  * is what lets the second call find the first call's work instead of duplicating it.
  */
+export const GHSA_ID = /^GHSA-[0-9a-zA-Z]{4}-[0-9a-zA-Z]{4}-[0-9a-zA-Z]{4}$/;
+
 export function branchNameFor(advisoryId: string): string {
-  if (!/^GHSA-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}$/.test(advisoryId)) {
+  // Case-insensitive, then normalised. GHSA ids are canonically lower-case, but an id
+  // that arrives from a feed or a human with different casing names the same advisory,
+  // and refusing it would strand a correction over punctuation. Normalising here also
+  // means two spellings of one advisory cannot map to two branches, which matters
+  // because this name is what makes a repeated write find the first write's work.
+  if (!GHSA_ID.test(advisoryId)) {
     throw new Error(`not a GHSA id: ${advisoryId}`);
   }
   return `introduced/${advisoryId.toLowerCase()}`;

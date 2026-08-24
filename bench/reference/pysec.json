@@ -164,6 +164,15 @@
   ],
   "pysec": "PYSEC-2018-107"
  },
+ "GHSA-5wmx-573v-2qwq": {
+  "disjoint": false,
+  "fixed": [],
+  "git_fix_shas": [],
+  "introduced": [
+   "0"
+  ],
+  "pysec": "PYSEC-2026-89"
+ },
  "GHSA-gfmx-qqqh-f38q": {
   "disjoint": true,
   "fixed": [
