@@ -27,7 +27,7 @@ from __future__ import annotations
 
 import dataclasses
 
-from evidence import Assessment, Interval
+from evidence import Assessment, Interval, Status
 from version import InvalidVersion, V, in_range
 
 
@@ -90,6 +90,7 @@ class Correction:
     removed: tuple[str, ...]        # currently flagged, evidence says not affected
     added: tuple[str, ...]          # not flagged, evidence says affected
     unknowns: tuple[str, ...]
+    unsettled_removals: tuple[str, ...]   # would be un-flagged without settled evidence
     fileable: bool
 
     @property
@@ -122,6 +123,7 @@ class Correction:
             "is_noop": self.is_noop,
             "needs_disjoint_range": self.needs_disjoint_range,
             "unknowns": list(self.unknowns),
+            "unsettled_removals": list(self.unsettled_removals),
             "fileable": self.fileable,
         }
 
@@ -129,12 +131,19 @@ class Correction:
 def emit(assessment: Assessment, published_intervals, published_versions: list[str]) -> Correction:
     """Compare what the record says against what the evidence supports.
 
-    `fileable` carries the assessment's own gate forward and adds one of its own: a
-    correction that removes versions is refused unless every release it touches was
-    corroborated. Widening needs no such gate. The asymmetry is the whole point --
-    telling someone to check software they were not worried about costs them an hour,
-    and telling them vulnerable software is safe costs them the thing the advisory
-    exists to prevent.
+    THE GATE APPLIES TO WHAT CHANGES, NOT TO EVERYTHING.
+
+    An earlier version required zero unresolved releases anywhere before anything could
+    be filed. Run against real packages that refuses everything: scrapy lists ninety-
+    eight affected versions going back to 2013, and asking whether a 2024 patch applies
+    to a 2013 file is not a question with an answer -- the file was rewritten several
+    times over. Ninety-two came back indeterminate, correctly, and one blanket rule
+    turned a correct prober into a permanent abstention.
+
+    What matters is the versions whose classification this correction would change. A
+    release we are not touching may be as unresolved as it likes; it keeps whatever the
+    record already says about it. A release we would REMOVE from the affected set has
+    to be settled and corroborated, because that is the claim being made about it.
     """
     proposed = translate(assessment.intervals, published_versions)
     now = affected_under(published_intervals, published_versions)
@@ -143,9 +152,25 @@ def emit(assessment: Assessment, published_intervals, published_versions: list[s
     removed = tuple(sorted(now - then, key=_key))
     added = tuple(sorted(then - now, key=_key))
 
-    fileable = assessment.fileable and not assessment.unknowns
-    if removed and not fileable:
-        fileable = False
+    # Verdicts are keyed by tag, `removed` by published version, and the two are
+    # spelled differently -- which is the reason this module exists. Matching them by
+    # string would silently find nothing and refuse every correction.
+    by_version: dict = {}
+    for verdict in assessment.verdicts:
+        try:
+            by_version.setdefault(V(verdict.version), verdict)
+        except InvalidVersion:
+            continue
+
+    def settled(version: str) -> bool:
+        try:
+            verdict = by_version.get(V(version))
+        except InvalidVersion:
+            return False
+        return bool(verdict and verdict.status is Status.FIXED and verdict.corroborated)
+
+    unsettled = tuple(v for v in removed if not settled(v))
+    fileable = not unsettled
 
     return Correction(
         published_intervals=tuple(published_intervals),
@@ -153,5 +178,6 @@ def emit(assessment: Assessment, published_intervals, published_versions: list[s
         removed=removed,
         added=added,
         unknowns=assessment.unknowns,
+        unsettled_removals=unsettled,
         fileable=fileable,
     )

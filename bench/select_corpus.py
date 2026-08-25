@@ -122,20 +122,54 @@ def cites_fix_commit(record: dict) -> bool:
     return any(COMMIT_URL.search(r.get("url", "")) for r in record.get("references", []))
 
 
-def resolve_repo(record: dict) -> str | None:
-    """Prefer the reference GitHub itself marks as the package home."""
+# Repositories that appear in references but are never the package's source. An
+# advisory frequently links the database that carries it, and that link is a github.com
+# URL like any other: apache-airflow resolved to pypa/advisory-database, and every
+# probe against it would have been meaningless while looking like a real result.
+NOT_SOURCE = {
+    "pypa/advisory-database", "github/advisory-database", "rustsec/advisory-db",
+    "golang/vulndb", "cve-org/cvelist", "cveproject/cvelist",
+}
+
+
+def _package_matches(package: str, repo_name: str) -> bool:
+    """Does this repository plausibly hold this package?
+
+    Names differ constantly -- matrix-synapse lives in matrix-org/synapse, elastic-apm
+    in elastic/apm-agent-python -- so this is a tiebreaker rather than a requirement.
+    """
+    a = package.lower().replace("-", "").replace("_", "").replace(".", "")
+    b = repo_name.lower().replace("-", "").replace("_", "").replace(".", "")
+    return a in b or b in a
+
+
+def resolve_repo(record: dict, package: str = "") -> str | None:
+    """Prefer the reference GitHub itself marks as the package home.
+
+    Then a repository whose name resembles the package, then anything left. A wrong
+    repository does not fail loudly -- it produces an investigation that looks ordinary
+    and means nothing.
+    """
     refs = record.get("references", [])
     ordered = [r for r in refs if r.get("type") == "PACKAGE"] + [
         r for r in refs if r.get("type") != "PACKAGE"
     ]
+    fallback: str | None = None
     for ref in ordered:
         m = GITHUB_REPO.match(ref.get("url", ""))
-        if m:
-            owner, name = m.group(1), m.group(2)
-            if name.endswith(".git"):
-                name = name[:-4]
-            return f"https://github.com/{owner}/{name}"
-    return None
+        if not m:
+            continue
+        owner, name = m.group(1), m.group(2)
+        if name.endswith(".git"):
+            name = name[:-4]
+        slug = f"{owner}/{name}"
+        if slug.lower() in NOT_SOURCE:
+            continue
+        url = f"https://github.com/{slug}"
+        if package and _package_matches(package, name):
+            return url
+        fallback = fallback or url
+    return fallback
 
 
 def sole_pypi_package(record: dict) -> dict | None:
@@ -162,6 +196,7 @@ class Candidate:
     package: str
     repo: str
     n_versions: int
+    versions: tuple[str, ...]      # every version the advisory lists as affected
     introduced: tuple[str, ...]
     fixed: tuple[str, ...]
     cites_commit: bool
@@ -169,7 +204,7 @@ class Candidate:
 
     def to_json(self) -> dict:
         d = dataclasses.asdict(self)
-        for k in ("introduced", "fixed", "cves"):
+        for k in ("introduced", "fixed", "cves", "versions"):
             d[k] = list(d[k])
         return d
 
@@ -202,7 +237,7 @@ def build_candidate(record: dict) -> tuple[Candidate | None, str | None]:
     if len(versions) < MIN_VERSIONS:
         return None, Reason.TOO_FEW_VERSIONS
 
-    repo = resolve_repo(record)
+    repo = resolve_repo(record, affected["package"]["name"])
     if repo is None:
         return None, Reason.REPO_UNRESOLVED
 
@@ -212,6 +247,10 @@ def build_candidate(record: dict) -> tuple[Candidate | None, str | None]:
             package=affected["package"]["name"].lower(),
             repo=repo,
             n_versions=len(versions),
+            # The list itself, not just its length. Every release the assessment walks
+            # comes from here, and storing only the count meant the pipeline had
+            # nothing to iterate and abstained on every advisory.
+            versions=tuple(versions),
             introduced=tuple(e["introduced"] for e in events if "introduced" in e),
             fixed=fixed or last_affected,
             cites_commit=cites_fix_commit(record),
