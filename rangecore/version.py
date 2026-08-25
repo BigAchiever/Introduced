@@ -66,7 +66,7 @@ class Version(NamedTuple):
     pre_num: int
     post: int              # -1 when absent, so 1.0 < 1.0.post1
     dev: int               # -1 when absent, so 1.0.dev1 < 1.0 needs care -- see below
-    local: str             # compared only for equality, never for ordering
+    local: str             # ordered too: 1.0 < 1.0+local, per PEP 440
 
 
 def _int(value: str | None, default: int = 0) -> int:

@@ -76,7 +76,12 @@ def test_the_same_strings_are_accepted_and_refused():
 def test_ordering_agrees_across_the_published_corpus():
     """Sampled rather than exhaustive: 41k versions is 850 million pairs. A fixed seed
     keeps a failure reproducible."""
-    parsed = [(m, r) for m, r in map(_both, _published_versions()) if m is not None]
+    # Both must be present. Filtering on the local parser alone would let a reference
+    # None through, and the comparison below would then raise TypeError instead of
+    # failing with the parity assertion that explains what actually diverged. Test order
+    # is not guaranteed, so this cannot lean on the parity test running first.
+    parsed = [(m, r) for m, r in map(_both, _published_versions())
+              if m is not None and r is not None]
     assert len(parsed) > 10_000, "snapshot looks truncated"
 
     rng = random.Random(0)
