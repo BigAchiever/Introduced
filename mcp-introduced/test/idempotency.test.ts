@@ -1,0 +1,52 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { branchNameFor } from '../src/github.ts';
+
+/**
+ * Tool execution is at-least-once across a crash inside the write window.
+ *
+ * Measured on TrueForge e9bf976: one human approval produced two `tools/call`, the
+ * second firing before the model was consulted again. The guard that prevents this
+ * for ungated tools is disabled for gated ones — annotating a tool destructive, which
+ * is what switches the approval gate on, is what removes the double-execution guard.
+ *
+ * If the harness is killed inside the write window and the session is resumed, a second
+ * pull request is opened against a real public repository, with nobody in the loop.
+ *
+ * So the branch name has to be a pure function of the advisory: the second call must
+ * be able to find the first call's work.
+ */
+
+test('the branch name is derived from the advisory alone', () => {
+  const a = branchNameFor('GHSA-x7jh-595q-wq82');
+  const b = branchNameFor('GHSA-x7jh-595q-wq82');
+  assert.equal(a, b);
+  assert.match(a, /^introduced\/ghsa-/);
+});
+
+test('different advisories never collide', () => {
+  assert.notEqual(branchNameFor('GHSA-x7jh-595q-wq82'), branchNameFor('GHSA-4qqq-9vqf-3h3f'));
+});
+
+test('a malformed advisory id is refused rather than guessed at', () => {
+  assert.throws(() => branchNameFor('CVE-2020-1234'));
+  assert.throws(() => branchNameFor('GHSA-short'));
+});
+
+test(
+  'a repeated correction returns the existing pull request instead of opening a second one',
+  { todo: 'openOrFindPullRequest — the write path is not yet idempotent' },
+  () => {},
+);
+
+test('every casing of one advisory names the same branch', () => {
+  // Two spellings of one advisory must not become two branches: the branch name is
+  // what lets a repeated write find the first write's work.
+  //
+  // The prefix is varied as well as the suffix. The first version of this test only
+  // varied the suffix, so it passed while `ghsa-...` was still being rejected.
+  const canonical = branchNameFor('GHSA-x7jh-595q-wq82');
+  for (const spelling of ['GHSA-X7JH-595Q-WQ82', 'ghsa-x7jh-595q-wq82', 'Ghsa-X7jh-595Q-wq82']) {
+    assert.equal(branchNameFor(spelling), canonical, spelling);
+  }
+});

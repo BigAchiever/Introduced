@@ -1,0 +1,234 @@
+{
+ "GHSA-226f-f24g-524w": {
+  "disjoint": false,
+  "fixed": [
+   "0.9.6"
+  ],
+  "git_fix_shas": [],
+  "introduced": [
+   "0"
+  ],
+  "pysec": "PYSEC-2026-2690"
+ },
+ "GHSA-227r-w5j2-6243": {
+  "disjoint": false,
+  "fixed": [
+   "5.3.0rc1"
+  ],
+  "git_fix_shas": [],
+  "introduced": [
+   "0"
+  ],
+  "pysec": "PYSEC-2026-358"
+ },
+ "GHSA-22c2-9gwg-mj59": {
+  "disjoint": false,
+  "fixed": [
+   "0.53.15"
+  ],
+  "git_fix_shas": [],
+  "introduced": [
+   "0"
+  ],
+  "pysec": "PYSEC-2026-1531"
+ },
+ "GHSA-22cc-w7xm-rfhx": {
+  "disjoint": false,
+  "fixed": [],
+  "git_fix_shas": [],
+  "introduced": [
+   "0"
+  ],
+  "pysec": "PYSEC-2026-1626"
+ },
+ "GHSA-22cj-m4wf-fv2c": {
+  "disjoint": false,
+  "fixed": [
+   "4.6.59"
+  ],
+  "git_fix_shas": [],
+  "introduced": [
+   "3.8.1"
+  ],
+  "pysec": "PYSEC-2026-3499"
+ },
+ "GHSA-22gh-3r9q-xf38": {
+  "disjoint": false,
+  "fixed": [
+   "7.0.3"
+  ],
+  "git_fix_shas": [],
+  "introduced": [
+   "0"
+  ],
+  "pysec": "PYSEC-2021-328"
+ },
+ "GHSA-22jh-6gx8-f944": {
+  "disjoint": false,
+  "fixed": [
+   "5.1.0"
+  ],
+  "git_fix_shas": [],
+  "introduced": [
+   "0"
+  ],
+  "pysec": "PYSEC-2019-178"
+ },
+ "GHSA-22jr-vc7j-g762": {
+  "disjoint": false,
+  "fixed": [
+   "1.9.4"
+  ],
+  "git_fix_shas": [],
+  "introduced": [
+   "0"
+  ],
+  "pysec": "PYSEC-2020-91"
+ },
+ "GHSA-22mf-97vh-x8rw": {
+  "disjoint": false,
+  "fixed": [
+   "0.5.0"
+  ],
+  "git_fix_shas": [],
+  "introduced": [
+   "0"
+  ],
+  "pysec": "PYSEC-2019-109"
+ },
+ "GHSA-22p3-qrh9-cx32": {
+  "disjoint": false,
+  "fixed": [
+   "1.61.1"
+  ],
+  "git_fix_shas": [
+   "fa1308061802ac7b7d20e954ba7372c5ac292333"
+  ],
+  "introduced": [
+   "0"
+  ],
+  "pysec": "PYSEC-2022-224"
+ },
+ "GHSA-2799-6g5r-mmc7": {
+  "disjoint": false,
+  "fixed": [],
+  "git_fix_shas": [],
+  "introduced": [
+   "0"
+  ],
+  "pysec": "PYSEC-2026-3077"
+ },
+ "GHSA-2cf3-g243-hhfx": {
+  "disjoint": false,
+  "fixed": [],
+  "git_fix_shas": [],
+  "introduced": [
+   "0"
+  ],
+  "pysec": "PYSEC-2026-682"
+ },
+ "GHSA-4jh2-3c85-q67h": {
+  "disjoint": true,
+  "fixed": [
+   "2.0.0b1",
+   "2.2.0"
+  ],
+  "git_fix_shas": [],
+  "introduced": [
+   "1.10.0",
+   "2.0.0"
+  ],
+  "pysec": "PYSEC-2022-11"
+ },
+ "GHSA-4qqq-9vqf-3h3f": {
+  "disjoint": true,
+  "fixed": [
+   "2.0.0",
+   "2.11.2"
+  ],
+  "git_fix_shas": [
+   "1d0502f25bbe55a22899af915623fda1aaeb9dd8"
+  ],
+  "introduced": [
+   "0",
+   "2.0.0"
+  ],
+  "pysec": "PYSEC-2024-258"
+ },
+ "GHSA-5pcv-m8w2-62m9": {
+  "disjoint": false,
+  "fixed": [],
+  "git_fix_shas": [],
+  "introduced": [
+   "0"
+  ],
+  "pysec": "PYSEC-2018-107"
+ },
+ "GHSA-5wmx-573v-2qwq": {
+  "disjoint": false,
+  "fixed": [],
+  "git_fix_shas": [],
+  "introduced": [
+   "0"
+  ],
+  "pysec": "PYSEC-2026-89"
+ },
+ "GHSA-gfmx-qqqh-f38q": {
+  "disjoint": true,
+  "fixed": [
+   "3.12.1",
+   "3.13.2"
+  ],
+  "git_fix_shas": [],
+  "introduced": [
+   "3.0.0",
+   "3.13.0"
+  ],
+  "pysec": "PYSEC-2026-2546"
+ },
+ "GHSA-vvjv-97j8-94xh": {
+  "disjoint": true,
+  "fixed": [
+   "3.6.1",
+   "3.8.0rc3"
+  ],
+  "git_fix_shas": [
+   "798aca1de142a4eca175ef51112e2235642f4f24"
+  ],
+  "introduced": [
+   "0",
+   "3.7.0"
+  ],
+  "pysec": "PYSEC-2023-53"
+ },
+ "GHSA-vw27-fwjf-5qxm": {
+  "disjoint": true,
+  "fixed": [
+   "1.8.0",
+   "2.4.0"
+  ],
+  "git_fix_shas": [
+   "8f46ba3f6dc7b18375f7aa63c48a1fe461190430"
+  ],
+  "introduced": [
+   "0",
+   "2.0.0"
+  ],
+  "pysec": "PYSEC-2021-382"
+ },
+ "GHSA-x7jh-595q-wq82": {
+  "disjoint": true,
+  "fixed": [
+   "2.7.17",
+   "2.8.9",
+   "2.9.6"
+  ],
+  "git_fix_shas": [],
+  "introduced": [
+   "0",
+   "2.8.0",
+   "2.9.0"
+  ],
+  "pysec": "PYSEC-2020-8"
+ }
+}

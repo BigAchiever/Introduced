@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+
+    // exactOptionalPropertyTypes is off, and not by preference: @modelcontextprotocol/sdk
+    // 1.29.0 declares `Transport.onclose?: () => void` in a way that is not assignable
+    // under that flag, so enabling it makes `server.connect(transport)` fail to compile
+    // against the library's own types. Revisit when the SDK is updated.
+    "exactOptionalPropertyTypes": false,
+
+    // Sources run directly under `node --experimental-strip-types`, so imports carry
+    // the .ts extension they actually have and nothing is emitted.
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+
+    "skipLibCheck": true
+  },
+  "include": ["src", "test"]
+}
