@@ -99,3 +99,19 @@ def test_the_backport_case(tmp_path):
 
 def test_an_empty_patch_decides_nothing(linear):
     assert linear[0].presence("", "v1.2", PATH).reason is Reason.EMPTY_PATCH
+
+
+def test_a_traversing_path_is_refused_before_it_is_used(linear):
+    """The path comes from an advisory record, not from us. The first version of this
+    guard sat after `git show`, which failed on the traversal first and left the check
+    unreachable -- so the refusal has to happen before the path is used for anything."""
+    r, patch = linear
+    for path in ("../../escape.py", "/etc/passwd", "a/../../b.py"):
+        probe = r.presence(patch, "v1.2", path)
+        assert probe.presence is Presence.INDETERMINATE
+        assert probe.reason is Reason.PATH_ESCAPES, path
+
+
+def test_an_ordinary_nested_path_is_untouched(linear):
+    r, patch = linear
+    assert r.presence(patch, "v1.2", PATH).presence is Presence.PRESENT

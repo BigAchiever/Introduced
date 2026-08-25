@@ -29,7 +29,7 @@ import functools
 import shutil
 import subprocess
 import tempfile
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 from version import InvalidVersion, V
 
@@ -50,6 +50,7 @@ class Reason(enum.Enum):
     DIVERGED = "diverged"                    # neither direction applies
     AMBIGUOUS = "ambiguous"                  # both directions apply; the patch says nothing
     EMPTY_PATCH = "empty_patch"              # the commit did not change this file
+    PATH_ESCAPES = "path_escapes"            # the recorded path leaves the working dir
 
 
 @dataclasses.dataclass(frozen=True)
@@ -66,6 +67,20 @@ class Probe:
 
 class GitError(RuntimeError):
     pass
+
+
+def _escapes(path: str) -> bool:
+    """Would writing this path leave the directory it is written into?
+
+    The path arrives from an advisory record, which is not ours, and this runs
+    unattended across twenty-five repositories. Checked before the path is used for
+    anything -- a guard placed after the first use is a guard that never runs, which
+    is what the first version of this did: `git show` failed on the traversal first
+    and the check below it was dead code.
+    """
+    if PurePosixPath(path).is_absolute() or Path(path).is_absolute():
+        return True
+    return any(part == ".." for part in PurePosixPath(path).parts)
 
 
 class Repo:
@@ -188,6 +203,8 @@ class Repo:
         """Does `ref` carry the post-fix code, the pre-fix code, or neither?"""
         if not patch.strip():
             return Probe(ref, path, Presence.INDETERMINATE, Reason.EMPTY_PATCH)
+        if _escapes(path):
+            return Probe(ref, path, Presence.INDETERMINATE, Reason.PATH_ESCAPES)
         sha, why = self.resolve_detail(ref)
         if sha is None:
             return Probe(ref, path, Presence.INDETERMINATE, why)
@@ -196,7 +213,7 @@ class Repo:
             return Probe(ref, path, Presence.INDETERMINATE, Reason.PATH_ABSENT)
 
         with tempfile.TemporaryDirectory() as tmp:
-            work = Path(tmp)
+            work = Path(tmp).resolve()
             target = work / path
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_text(content)
