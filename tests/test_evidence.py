@@ -67,9 +67,6 @@ def test_the_original_fix_release_is_corroborated_by_both_probers():
     """Recording both under one tier made two probers agreeing look like one prober
     speaking twice, and corroboration was permanently undercounted."""
     probe = Probe("2.0", PATH, Presence.PRESENT)
-
-    class _BM:
-        equivalents = ()
     from backport import BackportMap, Equivalent
     bm = BackportMap(fix="a" * 40, patch_id="p",
                      equivalents=(Equivalent("a" * 40, "fix", ("2.0",), True),))
