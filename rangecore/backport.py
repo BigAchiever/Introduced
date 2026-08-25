@@ -26,9 +26,9 @@ from pathlib import Path
 
 from version import InvalidVersion, V
 
-# A file with more history than this is pathological rather than large; the cap exists
-# so a runaway repository cannot exhaust memory, and the truncation is reported rather
-# than sampled silently. It is not a performance limit -- see patch_ids_for_paths().
+# A file with more history than this is pathological rather than large. The cap is
+# applied while reading, so it genuinely bounds the work; applying it to a fully
+# materialised list would report a limit it does not enforce.
 MAX_CANDIDATES = 5000
 
 
@@ -127,7 +127,8 @@ def patch_id(repo: Path, sha: str) -> str | None:
     return out[0] if out else None
 
 
-def patch_ids_for_paths(repo: Path, paths: list[str]) -> list[tuple[str, str]]:
+def patch_ids_for_paths(repo: Path, paths: list[str],
+                        limit: int = MAX_CANDIDATES) -> list[tuple[str, str]]:
     """(patch_id, commit) for every commit touching these paths, in one pass.
 
     `git patch-id` reads a stream, so the whole history of a file can be hashed by a
@@ -140,20 +141,34 @@ def patch_ids_for_paths(repo: Path, paths: list[str]) -> list[tuple[str, str]]:
         ["git", "-C", str(repo), "log", "--all", "-p", "--no-color", "--", *paths],
         stdout=subprocess.PIPE,
     )
+    ids = subprocess.Popen(
+        ["git", "-C", str(repo), "patch-id", "--stable"],
+        stdin=log.stdout, stdout=subprocess.PIPE, text=True,
+    )
+    if log.stdout:
+        log.stdout.close()          # only `ids` should hold the read end
+
+    pairs: list[tuple[str, str]] = []
     try:
-        result = subprocess.run(
-            ["git", "-C", str(repo), "patch-id", "--stable"],
-            stdin=log.stdout, capture_output=True, text=True, timeout=600,
-        )
+        for line in ids.stdout:      # streamed, so the cap bounds work rather than
+            parts = line.split()     # describing a bound it does not apply
+            if len(parts) == 2:
+                pairs.append((parts[0], parts[1]))
+            if len(pairs) >= limit:
+                break
     finally:
-        if log.stdout:
-            log.stdout.close()
-        log.wait()
-    pairs = []
-    for line in result.stdout.splitlines():
-        parts = line.split()
-        if len(parts) == 2:
-            pairs.append((parts[0], parts[1]))
+        # Both ends are killed on every exit path. Leaving `git log` running because
+        # the consumer stopped early would hold a pipe open for the rest of the run.
+        for process in (ids, log):
+            if process.poll() is None:
+                process.terminate()
+            try:
+                process.wait(timeout=30)
+            except subprocess.TimeoutExpired:
+                process.kill()
+                process.wait(timeout=10)
+        if ids.stdout:
+            ids.stdout.close()
     return pairs
 
 
@@ -166,17 +181,22 @@ def find_equivalents(repo: Path, fix: str, paths: list[str]) -> BackportMap:
     """Every commit anywhere in the repository that makes the same change as `fix`."""
     # Only commits touching the same files can be the same change, which is what makes
     # an exhaustive scan affordable at all.
-    pairs = patch_ids_for_paths(repo, paths)
+    # Resolve to a full SHA first. Comparing by prefix would let an abbreviated id
+    # match more than one commit, and the whole point of this module is deciding which
+    # commit a change belongs to.
+    resolved = _git(repo, "rev-parse", "--verify", "--quiet", f"{fix}^{{commit}}").stdout.strip()
+    if not resolved:
+        return BackportMap(fix=fix, patch_id=None, equivalents=())
+    fix = resolved
+
+    pairs = patch_ids_for_paths(repo, paths, limit=MAX_CANDIDATES + 1)
     truncated = len(pairs) > MAX_CANDIDATES
     if truncated:
         pairs = pairs[:MAX_CANDIDATES]
 
-    def same(a: str, b: str) -> bool:
-        return a == b or a.startswith(b) or b.startswith(a)
-
     # Prefer the fix's patch-id from the same pass, so the comparison is between two
     # values produced by one invocation rather than two.
-    target = next((pid for pid, sha in pairs if same(sha, fix)), None) or patch_id(repo, fix)
+    target = next((pid for pid, sha in pairs if sha == fix), None) or patch_id(repo, fix)
     if target is None:
         return BackportMap(fix=fix, patch_id=None, equivalents=(), truncated=truncated)
 
@@ -188,7 +208,7 @@ def find_equivalents(repo: Path, fix: str, paths: list[str]) -> BackportMap:
             sha=sha,
             subject=_git(repo, "log", "-1", "--format=%s", sha).stdout.strip(),
             releases=releases_containing(repo, sha),
-            is_the_fix=same(sha, fix),
+            is_the_fix=(sha == fix),
         ))
 
     found.sort(key=lambda e: (not e.is_the_fix, e.sha))

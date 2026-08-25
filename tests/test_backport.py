@@ -90,3 +90,23 @@ def test_tags_that_are_not_versions_are_kept_not_dropped(tmp_path):
     lines = find_equivalents(repo, fix, [PATH]).release_lines
     assert "nightly" in lines
     assert lines.index("v1.2") < lines.index("nightly")
+
+
+def test_an_abbreviated_sha_is_resolved_not_prefix_matched(backported):
+    """Prefix comparison would let a short id match more than one commit, and deciding
+    which commit a change belongs to is the entire job of this module."""
+    repo, fix, _ = backported
+    assert find_equivalents(repo, fix[:8], [PATH]).patch_id == find_equivalents(repo, fix, [PATH]).patch_id
+
+
+def test_an_unresolvable_commit_yields_nothing_rather_than_guessing(backported):
+    repo, _, _ = backported
+    result = find_equivalents(repo, "deadbeef", [PATH])
+    assert result.patch_id is None
+    assert result.equivalents == ()
+
+
+def test_the_candidate_cap_bounds_reading_not_just_the_result(tmp_path):
+    """Truncating a fully materialised list reports a limit it does not enforce."""
+    repo, fix = fx.linear(tmp_path / "linear")
+    assert len(patch_ids_for_paths(repo, [PATH], limit=1)) == 1

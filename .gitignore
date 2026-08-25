@@ -1,5 +1,4 @@
 
-!.env.example
 # Local
 # Node
 # Pinned OSV snapshot: 32 MB, reproducible from PROVENANCE.json
@@ -12,6 +11,7 @@
 .DS_Store
 .env
 .env.*
+!.env.example
 .mypy_cache/
 .pytest_cache/
 .ruff_cache/
