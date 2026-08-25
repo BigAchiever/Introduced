@@ -35,10 +35,18 @@ from version import InvalidVersion, V
 
 
 class Tier(enum.Enum):
-    """What justified a verdict, ordered by how much it is worth."""
+    """What was observed, named by the observation rather than by the conclusion.
+
+    EXACT_PATCH and COMMIT_CONTAINED are genuinely independent: one is a statement
+    about the file at a ref, the other about the commit graph reaching it. A squash or
+    a rebase can break the second while the first still holds. Recording them under one
+    name -- which the first version of this did -- makes two probers agreeing look like
+    one prober speaking twice, and corroboration is then permanently undercounted.
+    """
 
     EXACT_PATCH = "exact_patch"            # the fix applies in reverse at this release
-    BACKPORT = "backport"                  # a patch-id equivalent is contained here
+    COMMIT_CONTAINED = "commit_contained"  # the fix commit itself is an ancestor
+    BACKPORT = "backport"                  # a patch-id equivalent, not the original
     RELEASE_REFERENCE = "release_reference"  # not yet gathered
     TEST_ADDED = "test_added"                # not yet gathered
     BEHAVIORAL_PROBE = "behavioral_probe"    # a veto only -- never justifies a boundary
@@ -100,10 +108,13 @@ class Assessment:
     def fileable(self) -> bool:
         """May this be filed as a narrowing?
 
-        Every release we call FIXED has to be corroborated by two independent tiers,
-        and no release may be UNKNOWN. One unresolved release is enough to make the
-        boundary a guess, and a guess that narrows is the failure this project exists
-        to avoid.
+        Every release called FIXED has to be corroborated, and no release may be
+        UNKNOWN. One unresolved release is enough to make the boundary a guess, and a
+        guess that narrows is the failure this project exists to avoid.
+
+        The intervals are already computed under the same rule, so this is a second
+        statement of it rather than the only one -- deliberately, because the interval
+        is what a reader sees and the flag is what the write tool consults.
         """
         if self.unknowns:
             return False
@@ -138,15 +149,14 @@ def assess_release(version: str, probe: Probe | None, backports: BackportMap | N
         equivalent = next(
             (e for e in backports.equivalents if version in e.releases), None)
         if equivalent is not None:
-            tiers.append(Tier.EXACT_PATCH if equivalent.is_the_fix else Tier.BACKPORT)
+            tiers.append(Tier.COMMIT_CONTAINED if equivalent.is_the_fix else Tier.BACKPORT)
             notes.append(
                 f"contains {equivalent.sha[:10]}"
                 + ("" if equivalent.is_the_fix else " (cherry-picked)"))
 
     if probe is not None:
         if probe.presence is Presence.PRESENT:
-            if Tier.EXACT_PATCH not in tiers:
-                tiers.append(Tier.EXACT_PATCH)
+            tiers.append(Tier.EXACT_PATCH)
             notes.append("fix applies in reverse")
         elif probe.presence is Presence.ABSENT:
             # Sound on its own: the pre-fix code applies forward, so it is here.
@@ -164,15 +174,23 @@ def assess_release(version: str, probe: Probe | None, backports: BackportMap | N
 def to_intervals(verdicts) -> tuple[Interval, ...]:
     """Draw the affected set.
 
-    UNKNOWN counts as affected here. That is the pessimistic reading and it is chosen
-    on purpose: an unresolved release inside a run must not silently split a range and
-    hand a consumer a narrower one than the evidence supports.
+    Two things count as affected: UNKNOWN, and FIXED on a single tier.
+
+    The second is the correction that matters. An earlier version treated any FIXED as
+    not-affected, so one prober could narrow the range on its own -- which is precisely
+    the failure this module's opening paragraph says it exists to prevent. Requiring
+    corroboration only at the filing gate was too late: the interval is what gets
+    reported, scored, and read, and it had already been narrowed by then.
+
+    So a release leaves the affected set when two independent observations agree, and
+    not before. Everything else stays in, which is the pessimistic reading and the
+    intended one.
     """
     ordered = sorted(verdicts, key=lambda v: _sortable(v.version))
     intervals: list[Interval] = []
     start: str | None = None
     for verdict in ordered:
-        affected = verdict.status is not Status.FIXED
+        affected = not (verdict.status is Status.FIXED and verdict.corroborated)
         if affected and start is None:
             start = verdict.version
         elif not affected and start is not None:
