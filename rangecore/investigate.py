@@ -21,7 +21,7 @@ from typing import Callable
 
 from backport import BackportMap, find_equivalents
 from boundary import Correction, emit
-from candidates import Candidate, shortlist
+from candidates import Candidate, shortlist, source_paths, test_paths
 from evidence import Assessment, Interval, assess
 from tree import GitError, Presence, Repo
 from version import InvalidVersion, V
@@ -156,19 +156,63 @@ def investigate(advisory: dict, cache: Path, *, select: Selector = first_by_sour
     rejected = tuple((c.sha, f"not selected; {c.why}") for c in candidates if c.sha != chosen.sha)
     decision = Decision(tuple(candidates), chosen.sha, rejected)
 
-    try:
-        patch = repo.patch_for(chosen.sha, chosen.files[0]) if chosen.files else ""
-    except GitError as exc:
-        return Investigation(ghsa, package, "failed", decision, None, None, str(exc)[:200])
-    if not patch.strip():
+    # Probe every source file the commit touched, not the first one. A fix spread over
+    # two modules is ordinary, and picking one is an arbitrary choice that decides the
+    # answer. Ancillary files are excluded outright: on ansible the first file was a
+    # changelog fragment, which is deleted when a release is cut, so it was absent at
+    # every tag and all 111 releases came back unknown from a correctly chosen commit.
+    sources = source_paths(chosen)
+    if not sources:
+        return Investigation(ghsa, package, "abstained",
+                             dataclasses.replace(decision,
+                                                 note="candidate touched no source files"),
+                             None, None)
+
+    probes: dict = {}
+    patches: dict[str, str] = {}
+    for path in sources:
+        try:
+            patch = repo.patch_for(chosen.sha, path)
+        except GitError:
+            continue
+        if patch.strip():
+            patches[path] = patch
+    if not patches:
         return Investigation(ghsa, package, "abstained",
                              dataclasses.replace(decision, note="candidate changed nothing"),
                              None, None)
 
-    path = chosen.files[0]
-    probes = {v: repo.presence(patch, v, path) for v in versions}
-    backports: BackportMap = find_equivalents(repo.path, chosen.sha, [path])
-    assessment = assess(versions, probes, backports)
+    # A release counts as carrying the fix when any of the commit's source files shows
+    # it. Requiring all of them would let one refactored file veto the others, and the
+    # weakest answer is already the one that abstains.
+    for version in versions:
+        best = None
+        for path, patch in patches.items():
+            probe = repo.presence(patch, version, path)
+            if best is None or probe.presence is Presence.PRESENT:
+                best = probe
+            if probe.presence is Presence.PRESENT:
+                break
+        probes[version] = best
+
+    # The tests the fix brought with it, probed the same way. Independent of the source
+    # probe because it is a different file, and the tier the corroboration rule needs
+    # when a conflict-resolved cherry-pick has broken the patch-id match.
+    test_probes: dict = {}
+    for path in test_paths(chosen):
+        try:
+            test_patch = repo.patch_for(chosen.sha, path)
+        except GitError:
+            continue
+        if not test_patch.strip():
+            continue
+        for version in versions:
+            if test_probes.get(version) and test_probes[version].presence is Presence.PRESENT:
+                continue
+            test_probes[version] = repo.presence(test_patch, version, path)
+
+    backports: BackportMap = find_equivalents(repo.path, chosen.sha, list(patches))
+    assessment = assess(versions, probes, backports, test_probes)
 
     published = [Interval(
         (advisory.get("introduced") or ["0"])[0],

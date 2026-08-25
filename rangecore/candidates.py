@@ -189,3 +189,46 @@ def shortlist(repo: Path, *, advisory_ids: list[str], paths: list[str],
     return sorted(ranked.values(),
                   key=lambda c: (order[c.source], c.committed),
                   reverse=False)[:cap]
+
+
+# Paths whose presence at a release says nothing about whether the fix is there.
+# Changelog fragments are the sharpest case: many projects collect them per-change and
+# delete them when a release is cut, so the file is absent at every tag by design.
+_NOT_SOURCE = re.compile(
+    r"(^|/)(changelogs?|newsfragments?|news\.d|docs?|examples?|\.github)/"
+    r"|(^|/)(changelog|changes|news|history|readme|contributing|authors)[^/]*$"
+    r"|\.(md|rst|txt|po|pot|cfg|ini|toml)$",
+    re.I)
+_TEST = re.compile(r"(^|/)(tests?|testing|spec)/|(^|/)(test_|conftest)|_test\.py$", re.I)
+
+
+class FileRole(enum.Enum):
+    SOURCE = "source"      # presence here is evidence about the fix
+    TEST = "test"          # its own tier; a test arriving is not the fix arriving
+    ANCILLARY = "ancillary"  # changelogs, docs -- presence says nothing
+
+
+def classify_path(path: str) -> FileRole:
+    if _TEST.search(path):
+        return FileRole.TEST
+    if _NOT_SOURCE.search(path):
+        return FileRole.ANCILLARY
+    return FileRole.SOURCE
+
+
+def source_paths(candidate: Candidate) -> tuple[str, ...]:
+    """The files in a commit whose presence at a release means something.
+
+    Probing the first file a commit touched picks whatever sorts first, and on ansible
+    that was `changelogs/fragments/atomic_move_permissions.yml` -- a file deleted when
+    the release is cut, so absent at every tag and indeterminate at every ref. All 111
+    releases came back unknown from a commit that was correctly identified.
+
+    Every source file is returned rather than one, because a fix spread over two
+    modules is ordinary and picking one of them would be another arbitrary choice.
+    """
+    return tuple(p for p in candidate.files if classify_path(p) is FileRole.SOURCE)
+
+
+def test_paths(candidate: Candidate) -> tuple[str, ...]:
+    return tuple(p for p in candidate.files if classify_path(p) is FileRole.TEST)
