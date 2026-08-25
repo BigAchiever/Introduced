@@ -69,6 +69,22 @@ def zero_padded_tags(root: Path) -> tuple[Path, str]:
     return repo, fix
 
 
+def silent_fix(root: Path) -> tuple[Path, str]:
+    """A security fix whose commit message says nothing about security.
+
+    This is the ordinary case, not an edge one. certifi shipped a security fix in
+    2024.7.4 and named the commit "2024.07.04 (#295)": no CVE, no advisory id, none of
+    the words a search for security language would match. A shortlist built from
+    wording is empty for exactly the advisories this project selects for, since an
+    advisory with a well-labelled fix commit is one the curators could already resolve.
+    """
+    repo = init(root)
+    _commit(repo, "pkg/loader.py", VULNERABLE, "1.1.0 (#291)", tag="v1.1.0")
+    _commit(repo, "pkg/util.py", "VERSION = '1.1.1'\n", "1.1.1 (#293)", tag="v1.1.1")
+    fix = _commit(repo, "pkg/loader.py", FIXED, "1.2.0 (#295)", tag="v1.2.0")
+    return repo, fix
+
+
 def refactored_after_fix(root: Path) -> tuple[Path, str]:
     """The fix lands, then the file is rewritten around it.
 
