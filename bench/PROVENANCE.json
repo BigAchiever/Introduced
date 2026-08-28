@@ -2,26 +2,26 @@
  "available_per_arm": {
   "A": 5,
   "B": 2899,
-  "C": 633
+  "C": 638
  },
- "bytes": 33691667,
+ "bytes": 33951971,
  "funnel": {
-  "CANDIDATE": 3987,
-  "MULTI_PACKAGE": 1283,
-  "NOT_GHSA": 19018,
+  "CANDIDATE": 4040,
+  "MULTI_PACKAGE": 1289,
+  "NOT_GHSA": 19045,
   "NO_ECOSYSTEM_RANGE": 20,
   "NO_RESOLVABLE_BOUNDARY": 22,
   "REPO_UNRESOLVED": 71,
-  "TOO_FEW_VERSIONS": 611
+  "TOO_FEW_VERSIONS": 615
  },
- "obtained_at": "2026-08-25T09:17:37+00:00",
+ "obtained_at": "2026-08-28T21:38:32+00:00",
  "quotas": {
   "A": 6,
   "B": 8,
   "C": 11
  },
- "records_in_snapshot": 25012,
- "sha256": "524a2df1db238c7cf366a25cbb76e7331bc688f3a1a22b2d9b1253e989e1a27a",
+ "records_in_snapshot": 25102,
+ "sha256": "5190c6355247b69087dbd56a5d145c88ba6e7982c147c4a988d93c688d60965a",
  "source": "cache",
  "url": "https://osv-vulnerabilities.storage.googleapis.com/PyPI/all.zip"
 }
