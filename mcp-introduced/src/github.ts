@@ -62,7 +62,131 @@ export function branchNameFor(advisoryId: string): string {
   return `introduced/${advisoryId.toLowerCase()}`;
 }
 
-// TODO: openOrFindPullRequest(). Must check for an existing PR on
-// branchNameFor(advisoryId) and return it with preexisting: true rather than opening
-// a second one. Until this exists the write path is not safe to point at a real
-// repository — see test/idempotency.test.ts, which is currently red on purpose.
+export interface Target {
+  owner: string;
+  repo: string;
+  base: string;
+}
+
+export interface Correction {
+  advisoryId: string;
+  path: string;
+  content: string;
+  title: string;
+  body: string;
+}
+
+/** Minimal GitHub REST surface, injectable so the write path is testable without a token. */
+export type Http = (
+  method: string,
+  path: string,
+  body?: unknown,
+) => Promise<{ status: number; json: any }>;
+
+export function githubHttp(token: string, api = "https://api.github.com"): Http {
+  return async (method, path, body) => {
+    const response = await fetch(`${api}${path}`, {
+      method,
+      headers: {
+        authorization: `Bearer ${token}`,
+        accept: "application/vnd.github+json",
+        "x-github-api-version": "2022-11-28",
+        ...(body ? { "content-type": "application/json" } : {}),
+      },
+      ...(body ? { body: JSON.stringify(body) } : {}),
+    });
+    const text = await response.text();
+    return { status: response.status, json: text ? JSON.parse(text) : null };
+  };
+}
+
+/**
+ * Open a correction, or return the one already open for this advisory.
+ *
+ * Every step is written so that running it twice does what running it once did. That
+ * is not tidiness: tool execution is at-least-once across a crash inside the write
+ * window. One human approval was measured producing two tools/call, the second firing
+ * before the model was consulted again. Without this, a crash mid-write files a second
+ * pull request against a real public repository with nobody in the loop.
+ *
+ * The order matters. The existing pull request is looked for FIRST, before anything is
+ * created, because that is the check a resumed call needs and every later step is
+ * cheaper if it never runs.
+ */
+export async function openOrFindPullRequest(
+  http: Http,
+  target: Target,
+  correction: Correction,
+): Promise<PullRequestRef> {
+  const branch = branchNameFor(correction.advisoryId);
+  const { owner, repo, base } = target;
+  const head = `${owner}:${branch}`;
+
+  const findOpen = async (): Promise<PullRequestRef | null> => {
+    const found = await http(
+      "GET",
+      `/repos/${owner}/${repo}/pulls?head=${head}&state=all&per_page=1`,
+    );
+    if (found.status === 200 && Array.isArray(found.json) && found.json.length > 0) {
+      return { url: found.json[0].html_url, number: found.json[0].number, preexisting: true };
+    }
+    return null;
+  };
+
+  // 1. Already open? A resumed call stops here, having created nothing.
+  const already = await findOpen();
+  if (already) return already;
+
+  // 2. The branch. Creating one that exists is a 422, which means an earlier attempt
+  //    got this far -- carry on rather than fail.
+  const baseRef = await http("GET", `/repos/${owner}/${repo}/git/ref/heads/${base}`);
+  if (baseRef.status !== 200) {
+    throw new Error(`cannot read ${base} on ${owner}/${repo}: ${baseRef.status}`);
+  }
+  const created = await http("POST", `/repos/${owner}/${repo}/git/refs`, {
+    ref: `refs/heads/${branch}`,
+    sha: baseRef.json.object.sha,
+  });
+  if (created.status !== 201 && created.status !== 422) {
+    throw new Error(`cannot create ${branch}: ${created.status}`);
+  }
+
+  // 3. The file. Identical content is not committed again, so a retry does not add an
+  //    empty commit to a branch a reviewer is already reading.
+  const current = await http(
+    "GET",
+    `/repos/${owner}/${repo}/contents/${correction.path}?ref=${branch}`,
+  );
+  const encoded = Buffer.from(correction.content, "utf8").toString("base64");
+  const unchanged =
+    current.status === 200 &&
+    typeof current.json?.content === "string" &&
+    current.json.content.replace(/\s/g, "") === encoded;
+
+  if (!unchanged) {
+    const put = await http("PUT", `/repos/${owner}/${repo}/contents/${correction.path}`, {
+      message: correction.title,
+      content: encoded,
+      branch,
+      ...(current.status === 200 ? { sha: current.json.sha } : {}),
+    });
+    if (put.status !== 200 && put.status !== 201) {
+      throw new Error(`cannot write ${correction.path}: ${put.status}`);
+    }
+  }
+
+  // 4. The pull request. If opening fails, look again rather than assuming why: a
+  //    concurrent resume may have opened it between step 1 and here.
+  const opened = await http("POST", `/repos/${owner}/${repo}/pulls`, {
+    title: correction.title,
+    body: correction.body,
+    head: branch,
+    base,
+  });
+  if (opened.status === 201) {
+    return { url: opened.json.html_url, number: opened.json.number, preexisting: false };
+  }
+  const raced = await findOpen();
+  if (raced) return raced;
+  throw new Error(`cannot open a pull request for ${branch}: ${opened.status}`);
+}
