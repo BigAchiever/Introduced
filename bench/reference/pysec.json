@@ -127,19 +127,6 @@
   ],
   "pysec": "PYSEC-2026-682"
  },
- "GHSA-4jh2-3c85-q67h": {
-  "disjoint": true,
-  "fixed": [
-   "2.0.0b1",
-   "2.2.0"
-  ],
-  "git_fix_shas": [],
-  "introduced": [
-   "1.10.0",
-   "2.0.0"
-  ],
-  "pysec": "PYSEC-2022-11"
- },
  "GHSA-4qqq-9vqf-3h3f": {
   "disjoint": true,
   "fixed": [

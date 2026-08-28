@@ -31,7 +31,7 @@ import enum
 
 from backport import BackportMap
 from tree import Presence, Probe
-from version import InvalidVersion, V
+from version import InvalidVersion, V, VersionSet
 
 
 class Tier(enum.Enum):
@@ -48,7 +48,7 @@ class Tier(enum.Enum):
     COMMIT_CONTAINED = "commit_contained"  # the fix commit itself is an ancestor
     BACKPORT = "backport"                  # a patch-id equivalent, not the original
     RELEASE_REFERENCE = "release_reference"  # not yet gathered
-    TEST_ADDED = "test_added"                # not yet gathered
+    TEST_ADDED = "test_added"              # the fix's test is present at this release
     BEHAVIORAL_PROBE = "behavioral_probe"    # a veto only -- never justifies a boundary
     UNKNOWN = "unknown"
 
@@ -135,31 +135,51 @@ def _sortable(version: str):
 
 
 def assess_release(version: str, probe: Probe | None, backports: BackportMap | None,
-                   containing: frozenset[str] = frozenset()) -> ReleaseVerdict:
+                   containing: VersionSet | None = None,
+                   test_probe: Probe | None = None) -> ReleaseVerdict:
     """One release, weighed.
 
     `containing` is the set of releases that hold a patch-id equivalent of the fix, as
     reported by cherry-pick detection. It is what distinguishes a maintenance release
     that was deliberately patched from one that merely looks similar.
+
+    It is a VersionSet rather than a set of strings, and that is not a detail: the
+    releases come from git tags (v2.10.0) and the version being assessed comes from
+    PyPI (2.10.0). Comparing them as strings found nothing on every real advisory, so
+    the commit-graph tier never fired, nothing was ever corroborated, and no correction
+    could ever be filed.
     """
+    containing = containing if containing is not None else VersionSet()
     tiers: list[Tier] = []
     notes: list[str] = []
 
     if backports is not None and version in containing:
         equivalent = next(
-            (e for e in backports.equivalents if version in e.releases), None)
+            (e for e in backports.equivalents if version in VersionSet(e.releases)), None)
         if equivalent is not None:
             tiers.append(Tier.COMMIT_CONTAINED if equivalent.is_the_fix else Tier.BACKPORT)
             notes.append(
                 f"contains {equivalent.sha[:10]}"
                 + ("" if equivalent.is_the_fix else " (cherry-picked)"))
 
+    # A test that arrives with a fix is a separate artifact in a separate file, so its
+    # presence is an observation the source probe cannot make. This matters most
+    # exactly where the commit-graph tier goes silent: a cherry-pick resolved through a
+    # conflict is edited, its patch-id stops matching, and the release carrying the fix
+    # has only one observation left. On ansible that left 2.8.14 and 2.9.12 detected as
+    # fixed and unable to be acted on.
+    if test_probe is not None and test_probe.presence is Presence.PRESENT:
+        tiers.append(Tier.TEST_ADDED)
+        notes.append("the fix's test is present")
+
     if probe is not None:
         if probe.presence is Presence.PRESENT:
             tiers.append(Tier.EXACT_PATCH)
             notes.append("fix applies in reverse")
         elif probe.presence is Presence.ABSENT:
-            # Sound on its own: the pre-fix code applies forward, so it is here.
+            # Sound on its own: the pre-fix code applies forward, so it is here. A test
+            # present alongside vulnerable code does not rescue it -- the test may have
+            # arrived separately, and the code is what runs.
             return ReleaseVerdict(version, Status.AFFECTED, (Tier.EXACT_PATCH,),
                                   "pre-fix code present")
         else:
@@ -201,11 +221,13 @@ def to_intervals(verdicts) -> tuple[Interval, ...]:
     return tuple(intervals)
 
 
-def assess(releases, probes, backports: BackportMap | None) -> Assessment:
+def assess(releases, probes, backports: BackportMap | None,
+           test_probes: dict | None = None) -> Assessment:
     """Every release, weighed and then drawn as intervals."""
-    containing = frozenset(backports.release_lines) if backports else frozenset()
+    containing = VersionSet(backports.release_lines if backports else ())
+    tests = test_probes or {}
     verdicts = tuple(
-        assess_release(r, probes.get(r), backports, containing)
+        assess_release(r, probes.get(r), backports, containing, tests.get(r))
         for r in sorted(releases, key=_sortable)
     )
     return Assessment(verdicts=verdicts, intervals=to_intervals(verdicts))

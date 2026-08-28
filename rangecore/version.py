@@ -216,3 +216,55 @@ def in_range(version: str, introduced: str | None, fixed: str | None,
     if last_affected is not None:
         return v <= V(last_affected)
     return True   # introduced with no upper bound: everything after it is affected
+
+
+class VersionSet:
+    """Membership by version, never by spelling.
+
+    Four separate bugs in this project were the same bug: comparing a published version
+    against a git tag as strings. certifi ships 2024.7.4 and tags 2024.07.04; ansible
+    ships 2.10.0 and tags v2.10.0; open-webui ships 0.9.6 and tags v0.9.6. Every one of
+    those comparisons silently found nothing, and finding nothing looks exactly like a
+    correct negative -- a probe with no answer, a release with no corroboration, a
+    window with no commits.
+
+    Use this instead of a set of strings anywhere a version and a tag might meet.
+    Unparseable entries are kept and compared literally, so nothing is quietly dropped.
+    """
+
+    __slots__ = ("_parsed", "_literal")
+
+    def __init__(self, items=()) -> None:
+        self._parsed: dict = {}
+        self._literal: set[str] = set()
+        for item in items:
+            try:
+                self._parsed.setdefault(V(item), item)
+            except InvalidVersion:
+                self._literal.add(item)
+
+    def __contains__(self, item: object) -> bool:
+        if not isinstance(item, str):
+            return False
+        if item in self._literal:
+            return True
+        try:
+            return V(item) in self._parsed
+        except InvalidVersion:
+            return False
+
+    def spelling_of(self, item: str) -> str | None:
+        """The spelling this set holds for a version, whatever spelling was asked for."""
+        try:
+            return self._parsed.get(V(item))
+        except InvalidVersion:
+            return item if item in self._literal else None
+
+    def __len__(self) -> int:
+        return len(self._parsed) + len(self._literal)
+
+    def __iter__(self):
+        return iter(list(self._parsed.values()) + sorted(self._literal))
+
+    def __bool__(self) -> bool:
+        return bool(self._parsed or self._literal)

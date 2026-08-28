@@ -121,8 +121,8 @@ def test_held_out_set_is_not_empty_in_any_arm():
 
 def _candidate(ghsa, package):
     return sc.Candidate(ghsa=ghsa, package=package, repo=f"https://github.com/x/{package}",
-                        n_versions=10, introduced=("0",), fixed=("1.0",),
-                        cites_commit=False, cves=())
+                        n_versions=10, versions=("0.9", "1.0"), introduced=("0",),
+                        fixed=("1.0",), cites_commit=False, cves=())
 
 def test_selection_is_order_independent():
     pool = [(_candidate(f"GHSA-{c}", f"pkg{i}"), None, "C")
