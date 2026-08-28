@@ -33,6 +33,15 @@ import json
 import pathlib
 import re
 import sys
+
+if sys.version_info < (3, 10):
+    # A stranger on macOS gets the built-in python3, which is 3.9, and otherwise sees a
+    # TypeError from inside an import -- not a message anyone can act on.
+    raise SystemExit(
+        f"This needs Python 3.10 or newer; found {sys.version.split()[0]} at {sys.executable}.\n"
+        "On macOS the built-in `python3` is 3.9 -- try python3.11 or python3.13 instead."
+    )
+
 import urllib.request
 import zipfile
 from datetime import datetime, timezone
